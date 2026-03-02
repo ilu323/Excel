@@ -1,0 +1,1 @@
+Estos archivos son para la búsqueda de incongruencias, los he descartado porque he preferido hacerlo un poco por encima, sobre todo hay incongruencias con los archivos de rugosidades pero no parecen errores metodológicos sino más bien sucesos aislados por el método de generación de las ranuras, es decir que hay muchas ranuras que han salida mal y punto.

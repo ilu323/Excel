@@ -1,0 +1,2259 @@
+% --- INICIO CÓDIGO GENERADO AUTOMÁTICAMENTE ---
+
+% ================= SECCIÓN 100 ns =================
+\section{Resultados: 100 ns}
+\subsection{Variables Geométricas}
+\begin{frame}{Geometría - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Altura_Rebaba}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.78) (88.0,1.72) (90.0,4.77) (93.3,3.11) (94.0,8.57) (96.0,6.27) (96.0,8.12) (98.0,13.08) (98.7,16.65)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,-0.38) (88.0,2.86) (90.0,2.80) (93.3,4.84) (94.0,3.65) (96.0,8.22) (96.0,11.86) (98.0,18.24) (98.7,20.30)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.91) (88.0,2.14) (90.0,2.78) (93.3,5.69) (94.0,7.60) (96.0,2.82) (96.0,9.49) (98.0,16.87) (98.7,24.43)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Angulo}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,157.78) (88.0,160.54) (90.0,148.80) (93.3,133.63) (94.0,100.20) (96.0,123.03) (96.0,80.25) (98.0,65.54) (98.7,172.26)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,153.76) (88.0,138.09) (90.0,146.11) (93.3,129.77) (94.0,132.64) (96.0,103.84) (96.0,94.30) (98.0,105.39) (98.7,158.79)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,165.45) (88.0,153.80) (90.0,146.57) (93.3,126.18) (94.0,119.45) (96.0,107.50) (96.0,89.57) (98.0,134.30) (98.7,140.67)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Profundidad}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.77) (88.0,1.31) (90.0,2.90) (93.3,5.45) (94.0,9.14) (96.0,1.85) (96.0,11.39) (98.0,6.46) (98.7,17.29)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.42) (88.0,7.07) (90.0,4.43) (93.3,7.62) (94.0,7.26) (96.0,7.98) (96.0,13.36) (98.0,10.47) (98.7,19.56)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.25) (88.0,3.68) (90.0,5.77) (93.3,10.61) (94.0,10.19) (96.0,13.01) (96.0,18.63) (98.0,12.48) (98.7,26.22)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Rugosidad de Perfil (R)}
+\begin{frame}{Rugosidad R (1/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Ra}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.38) (88.0,0.43) (90.0,0.96) (93.3,0.50) (94.0,4.01) (96.0,2.69) (96.0,3.30) (98.0,2.12) (98.7,2.69)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.41) (88.0,0.64) (90.0,0.40) (93.3,0.56) (94.0,0.48) (96.0,2.55) (96.0,2.24) (98.0,6.61) (98.7,5.34)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.34) (88.0,0.33) (90.0,0.62) (93.3,0.58) (94.0,1.29) (96.0,4.78) (96.0,1.15) (98.0,3.29) (98.7,5.26)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rc}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.65) (88.0,1.62) (90.0,3.76) (93.3,3.01) (94.0,13.00) (96.0,10.26) (96.0,15.70) (98.0,9.20) (98.7,9.74)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.72) (88.0,1.26) (90.0,1.46) (93.3,4.18) (94.0,2.18) (96.0,11.46) (96.0,22.85) (98.0,25.33) (98.7,18.19)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.29) (88.0,1.13) (90.0,7.51) (93.3,2.36) (94.0,8.97) (96.0,20.05) (96.0,4.19) (98.0,14.35) (98.7,21.02)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rdq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.07) (88.0,0.08) (90.0,0.25) (93.3,0.23) (94.0,0.60) (96.0,0.39) (96.0,0.37) (98.0,0.41) (98.7,0.56)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.33) (88.0,0.10) (90.0,0.17) (93.3,0.13) (94.0,0.08) (96.0,0.37) (96.0,0.70) (98.0,0.76) (98.7,0.65)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.06) (88.0,0.06) (90.0,0.25) (93.3,0.10) (94.0,0.32) (96.0,0.93) (96.0,0.14) (98.0,0.51) (98.7,0.88)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (2/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rku}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,4.15) (88.0,3.08) (90.0,3.95) (93.3,4.02) (94.0,2.19) (96.0,3.55) (96.0,17.50) (98.0,7.77) (98.7,2.32)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.84) (88.0,4.54) (90.0,3.13) (93.3,25.79) (94.0,7.27) (96.0,50.20) (96.0,23.58) (98.0,4.84) (98.7,2.25)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,3.06) (88.0,2.90) (90.0,28.48) (93.3,3.26) (94.0,19.29) (96.0,4.72) (96.0,3.80) (98.0,3.54) (98.7,3.91)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rmax}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.07) (88.0,2.90) (90.0,6.54) (93.3,6.63) (94.0,18.42) (96.0,18.96) (96.0,23.96) (98.0,22.62) (98.7,16.73)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.05) (88.0,13.52) (90.0,2.67) (93.3,8.50) (94.0,5.55) (96.0,20.62) (96.0,31.05) (98.0,45.45) (98.7,26.59)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.44) (88.0,2.15) (90.0,12.48) (93.3,4.72) (94.0,17.53) (96.0,35.68) (96.0,8.47) (98.0,23.64) (98.7,37.65)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rp}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.12) (88.0,1.66) (90.0,3.03) (93.3,5.20) (94.0,11.13) (96.0,11.76) (96.0,15.86) (98.0,6.86) (98.7,8.36)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.93) (88.0,11.85) (90.0,1.57) (93.3,6.53) (94.0,3.94) (96.0,15.64) (96.0,25.24) (98.0,18.45) (98.7,13.06)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.24) (88.0,1.21) (90.0,10.39) (93.3,2.75) (94.0,13.73) (96.0,25.16) (96.0,5.05) (98.0,9.04) (98.7,22.60)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (3/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.49) (88.0,0.54) (90.0,1.25) (93.3,0.79) (94.0,4.75) (96.0,3.36) (96.0,4.50) (98.0,3.13) (98.7,3.31)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.53) (88.0,1.07) (90.0,0.49) (93.3,0.90) (94.0,0.66) (96.0,3.40) (96.0,4.23) (98.0,8.47) (98.7,6.36)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.43) (88.0,0.41) (90.0,1.30) (93.3,0.73) (94.0,2.25) (96.0,6.41) (96.0,1.44) (98.0,4.25) (98.7,6.72)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rsk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.65) (88.0,0.21) (90.0,-0.61) (93.3,2.05) (94.0,0.25) (96.0,-0.21) (96.0,1.20) (98.0,-1.55) (98.7,0.02)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.43) (88.0,4.27) (90.0,0.07) (93.3,2.83) (94.0,1.11) (96.0,1.30) (96.0,3.81) (98.0,-0.65) (98.7,-0.10)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.03) (88.0,0.12) (90.0,3.91) (93.3,0.23) (94.0,2.95) (96.0,1.03) (96.0,0.70) (98.0,-0.71) (98.7,-0.14)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rsm}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,84.42) (88.0,72.82) (90.0,92.79) (93.3,195.52) (94.0,84.98) (96.0,102.38) (96.0,138.42) (98.0,114.93) (98.7,77.49)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,79.50) (88.0,40.32) (90.0,58.98) (93.3,217.02) (94.0,95.72) (96.0,141.85) (96.0,303.32) (98.0,80.71) (98.7,104.62)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,68.48) (88.0,56.58) (90.0,286.65) (93.3,92.48) (94.0,196.51) (96.0,122.70) (96.0,88.03) (98.0,129.62) (98.7,113.61)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (4/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\scriptsize \textbf{Rv}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.34) (88.0,1.33) (90.0,3.96) (93.3,1.76) (94.0,10.61) (96.0,11.87) (96.0,8.74) (98.0,15.77) (98.7,8.69)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.33) (88.0,1.76) (90.0,1.43) (93.3,1.97) (94.0,1.81) (96.0,8.40) (96.0,6.87) (98.0,29.13) (98.7,14.44)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.33) (88.0,1.09) (90.0,2.21) (93.3,1.97) (94.0,4.56) (96.0,13.28) (96.0,3.42) (98.0,15.21) (98.7,19.55)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\scriptsize \textbf{Rz}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.33) (88.0,2.38) (90.0,5.65) (93.3,3.34) (94.0,16.29) (96.0,15.62) (96.0,17.11) (98.0,11.39) (98.7,14.15)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.50) (88.0,5.66) (90.0,2.25) (93.3,3.80) (94.0,3.25) (96.0,15.12) (96.0,18.49) (98.0,37.59) (98.7,23.59)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.97) (88.0,1.91) (90.0,5.76) (93.3,3.22) (94.0,8.91) (96.0,26.32) (96.0,6.18) (98.0,16.76) (98.7,27.82)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Rugosidad Superficial (S)}
+\begin{frame}{Rugosidad S (1/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sa}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.98) (88.0,0.60) (90.0,1.59) (93.3,2.52) (94.0,4.62) (96.0,2.89) (96.0,6.18) (98.0,3.10) (98.7,3.64)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.89) (88.0,2.48) (90.0,1.69) (93.3,3.85) (94.0,3.61) (96.0,4.60) (96.0,8.10) (98.0,6.60) (98.7,6.18)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.72) (88.0,1.57) (90.0,2.60) (93.3,4.83) (94.0,4.59) (96.0,6.01) (96.0,8.68) (98.0,4.53) (98.7,8.03)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{S10z}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,5.02) (88.0,3.90) (90.0,13.94) (93.3,11.94) (94.0,27.15) (96.0,29.84) (96.0,29.06) (98.0,29.03) (98.7,23.22)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,13.76) (88.0,20.08) (90.0,8.02) (93.3,23.38) (94.0,15.82) (96.0,31.01) (96.0,49.59) (98.0,54.80) (98.7,39.07)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,4.53) (88.0,6.70) (90.0,14.27) (93.3,24.80) (94.0,24.70) (96.0,41.07) (96.0,37.57) (98.0,39.70) (98.7,47.62)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.16) (88.0,0.74) (90.0,2.16) (93.3,2.92) (94.0,5.60) (96.0,3.86) (96.0,7.21) (98.0,4.10) (98.7,4.48)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.36) (88.0,3.05) (90.0,1.96) (93.3,4.45) (94.0,4.14) (96.0,5.73) (96.0,9.35) (98.0,7.99) (98.7,7.49)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.88) (88.0,1.82) (90.0,3.04) (93.3,5.46) (94.0,5.34) (96.0,7.42) (96.0,10.10) (98.0,5.66) (98.7,9.72)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (2/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sp}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.82) (88.0,3.20) (90.0,9.67) (93.3,8.77) (94.0,15.47) (96.0,18.00) (96.0,17.94) (98.0,10.84) (98.7,21.58)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,9.57) (88.0,20.84) (90.0,7.74) (93.3,19.82) (94.0,14.98) (96.0,19.46) (96.0,23.15) (98.0,17.67) (98.7,23.16)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,5.25) (88.0,5.98) (90.0,13.03) (93.3,18.74) (94.0,20.52) (96.0,31.14) (96.0,20.03) (98.0,15.36) (98.7,37.78)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sdq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.21) (88.0,0.16) (90.0,0.35) (93.3,0.48) (94.0,1.16) (96.0,0.64) (96.0,1.83) (98.0,1.03) (98.7,0.79)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.31) (88.0,0.54) (90.0,0.32) (93.3,0.70) (94.0,0.61) (96.0,1.08) (96.0,1.57) (98.0,2.03) (98.7,1.38)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.16) (88.0,0.26) (90.0,0.42) (93.3,0.61) (94.0,0.84) (96.0,1.61) (96.0,1.55) (98.0,1.08) (98.7,1.84)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sdr}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.24) (88.0,1.47) (90.0,5.62) (93.3,10.89) (94.0,47.24) (96.0,17.54) (96.0,92.20) (98.0,36.41) (98.7,26.06)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,4.52) (88.0,12.42) (90.0,5.18) (93.3,19.99) (94.0,16.52) (96.0,40.29) (96.0,74.88) (98.0,119.89) (98.7,67.65)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.28) (88.0,3.58) (90.0,7.98) (93.3,15.42) (94.0,27.21) (96.0,82.79) (96.0,62.25) (98.0,40.70) (98.7,107.16)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (3/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.40) (88.0,2.16) (90.0,4.16) (93.3,7.65) (94.0,12.64) (96.0,8.47) (96.0,19.81) (98.0,8.86) (98.7,12.11)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,5.75) (88.0,7.74) (90.0,4.75) (93.3,18.57) (94.0,10.41) (96.0,14.85) (96.0,22.83) (98.0,18.04) (98.7,14.38)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.93) (88.0,11.95) (90.0,10.91) (93.3,20.41) (94.0,11.40) (96.0,23.75) (96.0,20.68) (98.0,9.10) (98.7,23.64)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sku}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.43) (88.0,2.85) (90.0,4.84) (93.3,2.08) (94.0,2.42) (96.0,4.87) (96.0,1.94) (98.0,6.13) (98.7,3.15)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,4.07) (88.0,4.97) (90.0,2.22) (93.3,2.43) (94.0,2.09) (96.0,2.85) (96.0,2.06) (98.0,4.23) (98.7,2.53)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,6.01) (88.0,2.15) (90.0,2.53) (93.3,1.75) (94.0,2.44) (96.0,3.15) (96.0,1.75) (98.0,3.27) (98.7,2.74)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Spk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.91) (88.0,0.65) (90.0,2.09) (93.3,1.96) (94.0,3.08) (96.0,4.17) (96.0,3.19) (98.0,2.26) (98.7,4.61)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.57) (88.0,3.79) (90.0,1.97) (93.3,3.98) (94.0,3.60) (96.0,5.38) (96.0,5.06) (98.0,3.78) (98.7,5.03)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.39) (88.0,5.67) (90.0,4.46) (93.3,3.10) (94.0,5.69) (96.0,4.46) (96.0,6.10) (98.0,2.62) (98.7,4.79)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (4/4) - 100 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Ssk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.27) (88.0,0.16) (90.0,-0.80) (93.3,0.11) (94.0,-0.44) (96.0,-0.22) (96.0,-0.21) (98.0,-1.26) (98.7,0.44)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.52) (88.0,0.89) (90.0,0.38) (93.3,0.44) (94.0,0.28) (96.0,0.05) (96.0,-0.28) (98.0,-0.73) (98.7,0.27)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.70) (88.0,0.26) (90.0,0.39) (93.3,-0.05) (94.0,0.55) (96.0,0.33) (96.0,-0.38) (98.0,-0.61) (98.7,0.19)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sv}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.77) (88.0,2.18) (90.0,8.81) (93.3,6.26) (94.0,16.10) (96.0,18.02) (96.0,15.52) (98.0,23.82) (98.7,12.73)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,6.12) (88.0,5.85) (90.0,4.11) (93.3,8.94) (94.0,7.23) (96.0,14.27) (96.0,37.27) (98.0,41.10) (98.7,24.63)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.22) (88.0,3.73) (90.0,5.61) (93.3,9.71) (94.0,9.03) (96.0,17.60) (96.0,19.74) (98.0,39.08) (98.7,28.89)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Svk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.45) (88.0,0.71) (90.0,3.90) (93.3,1.23) (94.0,6.74) (96.0,5.12) (96.0,3.88) (98.0,6.38) (98.7,2.59)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.16) (88.0,0.71) (90.0,0.57) (93.3,2.52) (94.0,0.67) (96.0,4.23) (96.0,5.11) (98.0,11.56) (98.7,3.08)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.53) (88.0,2.84) (90.0,1.07) (93.3,4.22) (94.0,3.66) (96.0,15.37) (96.0,9.21) (98.0,4.80) (98.7,5.39)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+% ================= SECCIÓN 150 ns =================
+\section{Resultados: 150 ns}
+\subsection{Variables Geométricas}
+\begin{frame}{Geometría - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Altura_Rebaba}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.99) (88.0,2.28) (90.0,3.79) (93.3,1.35) (94.0,5.40) (96.0,3.49) (96.0,7.31) (98.0,17.66) (98.7,20.66)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.84) (88.0,1.93) (90.0,3.48) (93.3,4.94) (94.0,9.79) (96.0,16.06) (96.0,10.31) (98.0,21.18) (98.7,15.65)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.93) (88.0,2.80) (90.0,4.32) (93.3,5.64) (94.0,10.14) (96.0,19.50) (96.0,10.98) (98.0,15.67) (98.7,23.34)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Angulo}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,160.90) (88.0,153.67) (90.0,150.78) (93.3,130.12) (94.0,122.91) (96.0,155.15) (96.0,97.77) (98.0,114.92) (98.7,163.32)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,159.47) (88.0,144.37) (90.0,133.34) (93.3,122.81) (94.0,106.13) (96.0,84.67) (96.0,84.03) (98.0,150.94) (98.7,144.64)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,162.08) (88.0,139.72) (90.0,132.62) (93.3,118.20) (94.0,99.77) (96.0,57.96) (96.0,73.63) (98.0,149.29) (98.7,166.45)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Profundidad}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.66) (88.0,3.08) (90.0,4.89) (93.3,5.27) (94.0,9.26) (96.0,6.21) (96.0,9.04) (98.0,10.91) (98.7,19.39)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.55) (88.0,5.88) (90.0,7.82) (93.3,8.98) (94.0,14.35) (96.0,10.48) (96.0,17.23) (98.0,17.78) (98.7,12.80)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,3.30) (88.0,7.33) (90.0,9.59) (93.3,12.65) (94.0,17.71) (96.0,26.11) (96.0,17.18) (98.0,12.76) (98.7,26.72)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Rugosidad de Perfil (R)}
+\begin{frame}{Rugosidad R (1/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Ra}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.50) (88.0,0.49) (90.0,0.77) (93.3,0.36) (94.0,0.96) (96.0,2.13) (96.0,1.88) (98.0,2.28) (98.7,2.43)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.36) (88.0,1.01) (90.0,1.25) (93.3,0.50) (94.0,0.96) (96.0,4.39) (96.0,2.04) (98.0,2.42) (98.7,5.59)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.34) (88.0,0.51) (90.0,1.06) (93.3,0.61) (94.0,1.51) (96.0,6.39) (96.0,2.77) (98.0,2.99) (98.7,5.00)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rc}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.02) (88.0,1.97) (90.0,4.89) (93.3,1.54) (94.0,8.40) (96.0,8.87) (96.0,11.35) (98.0,10.68) (98.7,8.72)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.35) (88.0,5.71) (90.0,12.16) (93.3,2.10) (94.0,5.48) (96.0,17.10) (96.0,14.75) (98.0,9.96) (98.7,19.43)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.56) (88.0,2.85) (90.0,16.88) (93.3,2.58) (94.0,9.19) (96.0,41.11) (96.0,18.58) (98.0,12.17) (98.7,17.09)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rdq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.09) (88.0,0.09) (90.0,0.16) (93.3,0.26) (94.0,0.15) (96.0,0.29) (96.0,0.26) (98.0,0.48) (98.7,0.39)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.69) (88.0,0.16) (90.0,0.42) (93.3,0.10) (94.0,0.29) (96.0,0.48) (96.0,0.49) (98.0,0.34) (98.7,0.93)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.07) (88.0,0.13) (90.0,0.42) (93.3,0.12) (94.0,0.30) (96.0,1.70) (96.0,0.71) (98.0,0.43) (98.7,0.68)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (2/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rku}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.10) (88.0,3.57) (90.0,3.39) (93.3,5.81) (94.0,12.96) (96.0,3.69) (96.0,4.98) (98.0,13.24) (98.7,8.86)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.27) (88.0,5.34) (90.0,11.58) (93.3,4.94) (94.0,27.80) (96.0,8.85) (96.0,25.76) (98.0,9.97) (98.7,2.37)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,7.12) (88.0,11.26) (90.0,33.73) (93.3,6.30) (94.0,5.13) (96.0,7.96) (96.0,16.03) (98.0,3.74) (98.7,2.51)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rmax}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.48) (88.0,3.86) (90.0,8.18) (93.3,3.55) (94.0,14.50) (96.0,15.87) (96.0,18.47) (98.0,20.07) (98.7,16.77)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.49) (88.0,9.85) (90.0,19.77) (93.3,4.48) (94.0,14.31) (96.0,30.55) (96.0,29.55) (98.0,17.57) (98.7,31.97)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,3.84) (88.0,7.01) (90.0,26.54) (93.3,5.62) (94.0,14.49) (96.0,62.00) (96.0,38.23) (98.0,20.91) (98.7,28.74)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rp}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.10) (88.0,2.29) (90.0,5.70) (93.3,2.48) (94.0,10.45) (96.0,7.75) (96.0,14.86) (98.0,7.49) (98.7,9.38)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.21) (88.0,7.55) (90.0,16.41) (93.3,3.06) (94.0,11.41) (96.0,15.01) (96.0,22.01) (98.0,8.01) (98.7,15.52)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.28) (88.0,5.48) (90.0,20.85) (93.3,4.28) (94.0,8.32) (96.0,48.79) (96.0,29.08) (98.0,8.78) (98.7,12.64)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (3/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.64) (88.0,0.63) (90.0,1.16) (93.3,0.46) (94.0,1.79) (96.0,2.75) (96.0,2.98) (98.0,3.13) (98.7,2.98)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.46) (88.0,1.61) (90.0,2.53) (93.3,0.65) (94.0,1.53) (96.0,5.64) (96.0,3.43) (98.0,3.14) (98.7,6.75)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.47) (88.0,0.74) (90.0,2.72) (93.3,0.79) (94.0,2.40) (96.0,9.87) (96.0,4.88) (98.0,3.91) (98.7,6.03)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rsk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.24) (88.0,0.27) (90.0,1.30) (93.3,0.96) (94.0,3.02) (96.0,-0.14) (96.0,2.52) (98.0,-1.28) (98.7,-0.05)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,-0.17) (88.0,2.25) (90.0,3.74) (93.3,0.22) (94.0,3.19) (96.0,-0.24) (96.0,3.49) (98.0,-0.51) (98.7,0.10)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.69) (88.0,1.87) (90.0,4.33) (93.3,0.83) (94.0,0.77) (96.0,1.75) (96.0,2.77) (98.0,-0.60) (98.7,-0.21)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rsm}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,69.85) (88.0,80.79) (90.0,151.77) (93.3,78.70) (94.0,344.06) (96.0,121.87) (96.0,155.68) (98.0,101.84) (98.7,77.35)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,66.88) (88.0,167.08) (90.0,382.34) (93.3,88.18) (94.0,145.96) (96.0,130.16) (96.0,278.84) (98.0,112.17) (98.7,83.67)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,89.24) (88.0,130.36) (90.0,349.16) (93.3,82.18) (94.0,131.21) (96.0,183.10) (96.0,450.18) (98.0,110.13) (98.7,95.46)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (4/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\scriptsize \textbf{Rv}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.64) (88.0,1.95) (90.0,2.57) (93.3,1.07) (94.0,4.16) (96.0,8.34) (96.0,4.45) (98.0,15.12) (98.7,8.21)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.36) (88.0,3.16) (90.0,3.94) (93.3,1.98) (94.0,2.90) (96.0,16.66) (96.0,7.53) (98.0,10.27) (98.7,17.22)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.70) (88.0,1.54) (90.0,5.69) (93.3,1.91) (94.0,6.21) (96.0,19.58) (96.0,10.60) (98.0,13.68) (98.7,17.07)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\scriptsize \textbf{Rz}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.99) (88.0,2.98) (90.0,5.31) (93.3,2.23) (94.0,6.46) (96.0,11.88) (96.0,14.55) (98.0,15.33) (98.7,12.65)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.03) (88.0,6.46) (90.0,11.80) (93.3,3.04) (94.0,6.72) (96.0,22.80) (96.0,12.54) (98.0,12.72) (98.7,26.56)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.33) (88.0,4.01) (90.0,8.27) (93.3,3.84) (94.0,8.74) (96.0,39.46) (96.0,20.93) (98.0,15.26) (98.7,24.00)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Rugosidad Superficial (S)}
+\begin{frame}{Rugosidad S (1/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sa}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.86) (88.0,1.25) (90.0,2.16) (93.3,2.59) (94.0,3.73) (96.0,2.24) (96.0,4.97) (98.0,4.69) (98.7,4.27)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.02) (88.0,1.82) (90.0,3.54) (93.3,4.48) (94.0,7.00) (96.0,6.39) (96.0,9.92) (98.0,4.26) (98.7,6.67)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.05) (88.0,2.76) (90.0,4.93) (93.3,5.68) (94.0,8.43) (96.0,13.58) (96.0,10.88) (98.0,5.85) (98.7,16.08)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{S10z}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,5.50) (88.0,6.21) (90.0,11.81) (93.3,11.31) (94.0,17.99) (96.0,20.44) (96.0,23.31) (98.0,30.77) (98.7,24.01)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,5.63) (88.0,11.21) (90.0,22.04) (93.3,21.81) (94.0,39.92) (96.0,44.72) (96.0,37.70) (98.0,28.94) (98.7,37.27)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,5.49) (88.0,17.12) (90.0,33.82) (93.3,27.43) (94.0,39.04) (96.0,63.83) (96.0,46.50) (98.0,34.70) (98.7,73.21)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.04) (88.0,1.48) (90.0,2.55) (93.3,2.97) (94.0,4.33) (96.0,3.01) (96.0,5.85) (98.0,5.71) (98.7,5.21)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.20) (88.0,2.20) (90.0,4.12) (93.3,5.11) (94.0,8.06) (96.0,8.30) (96.0,10.88) (98.0,5.26) (98.7,8.21)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.26) (88.0,3.28) (90.0,6.28) (93.3,6.57) (94.0,9.58) (96.0,15.70) (96.0,12.84) (98.0,6.83) (98.7,18.81)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (2/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sp}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,4.40) (88.0,5.29) (90.0,9.15) (93.3,12.66) (94.0,14.62) (96.0,16.97) (96.0,17.62) (98.0,13.87) (98.7,18.84)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,4.08) (88.0,7.92) (90.0,18.99) (93.3,16.06) (94.0,25.07) (96.0,23.16) (96.0,26.53) (98.0,22.46) (98.7,29.45)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,7.39) (88.0,16.56) (90.0,35.58) (93.3,23.32) (94.0,28.03) (96.0,35.24) (96.0,21.73) (98.0,23.14) (98.7,48.94)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sdq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.19) (88.0,0.26) (90.0,0.39) (93.3,0.47) (94.0,0.72) (96.0,0.47) (96.0,1.22) (98.0,1.07) (98.7,0.87)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.17) (88.0,0.31) (90.0,0.64) (93.3,0.72) (94.0,1.05) (96.0,1.50) (96.0,1.93) (98.0,0.88) (98.7,1.69)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.20) (88.0,0.46) (90.0,0.92) (93.3,0.72) (94.0,1.12) (96.0,2.77) (96.0,2.01) (98.0,1.14) (98.7,1.36)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sdr}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.72) (88.0,3.44) (90.0,7.40) (93.3,10.10) (94.0,22.31) (96.0,9.35) (96.0,48.56) (98.0,39.21) (98.7,31.57)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.53) (88.0,4.89) (90.0,16.00) (93.3,21.06) (94.0,41.27) (96.0,69.40) (96.0,96.01) (98.0,37.58) (98.7,94.56)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.14) (88.0,9.52) (90.0,30.47) (93.3,21.22) (94.0,43.07) (96.0,210.86) (96.0,117.56) (98.0,45.27) (98.7,69.39)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (3/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.00) (88.0,3.33) (90.0,6.68) (93.3,7.61) (94.0,10.29) (96.0,6.34) (96.0,15.35) (98.0,15.74) (98.7,14.82)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.91) (88.0,6.13) (90.0,10.24) (93.3,20.99) (94.0,21.96) (96.0,16.35) (96.0,15.45) (98.0,12.77) (98.7,15.44)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,6.32) (88.0,15.88) (90.0,20.47) (93.3,15.51) (94.0,21.61) (96.0,18.09) (96.0,22.91) (98.0,12.57) (98.7,21.30)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sku}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.67) (88.0,2.41) (90.0,2.89) (93.3,2.11) (94.0,2.39) (96.0,4.64) (96.0,2.14) (98.0,2.80) (98.7,2.58)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.33) (88.0,2.71) (90.0,2.69) (93.3,2.00) (94.0,2.10) (96.0,3.52) (96.0,1.48) (98.0,3.21) (98.7,2.74)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,3.27) (88.0,3.18) (90.0,7.45) (93.3,1.89) (94.0,1.76) (96.0,2.00) (96.0,1.85) (98.0,2.30) (98.7,1.87)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Spk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.93) (88.0,1.18) (90.0,2.40) (93.3,2.10) (94.0,4.49) (96.0,3.39) (96.0,4.91) (98.0,2.42) (98.7,3.86)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.68) (88.0,2.15) (90.0,4.22) (93.3,3.96) (94.0,6.20) (96.0,7.47) (96.0,14.82) (98.0,2.42) (98.7,6.45)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.78) (88.0,4.59) (90.0,6.25) (93.3,3.35) (94.0,4.35) (96.0,4.24) (96.0,2.08) (98.0,3.77) (98.7,2.62)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (4/4) - 150 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Ssk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.20) (88.0,0.27) (90.0,0.44) (93.3,0.14) (94.0,0.46) (96.0,-0.33) (96.0,0.29) (98.0,-0.31) (98.7,0.02)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,-0.19) (88.0,0.18) (90.0,0.47) (93.3,0.25) (94.0,0.06) (96.0,-0.72) (96.0,0.03) (98.0,-0.64) (98.7,0.47)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.48) (88.0,0.60) (90.0,0.51) (93.3,-0.28) (94.0,0.04) (96.0,-0.53) (96.0,-0.51) (98.0,-0.12) (98.7,-0.39)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sv}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.92) (88.0,3.96) (90.0,5.71) (93.3,6.10) (94.0,8.71) (96.0,11.60) (96.0,11.99) (98.0,26.64) (98.7,15.28)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.41) (88.0,5.72) (90.0,7.07) (93.3,11.74) (94.0,25.71) (96.0,29.24) (96.0,19.59) (98.0,23.50) (98.7,21.34)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,3.98) (88.0,6.54) (90.0,31.32) (93.3,14.76) (94.0,18.77) (96.0,36.58) (96.0,27.17) (98.0,19.21) (98.7,40.90)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Svk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.63) (88.0,2.58) (90.0,0.89) (93.3,0.84) (94.0,1.17) (96.0,4.43) (96.0,1.51) (98.0,7.24) (98.7,4.39)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.14) (88.0,1.20) (90.0,0.56) (93.3,3.24) (94.0,5.49) (96.0,14.09) (96.0,5.43) (98.0,6.80) (98.7,2.25)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.71) (88.0,14.30) (90.0,4.70) (93.3,7.55) (94.0,5.86) (96.0,9.74) (96.0,9.35) (98.0,3.29) (98.7,7.33)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+% ================= SECCIÓN 200 ns =================
+\section{Resultados: 200 ns}
+\subsection{Variables Geométricas}
+\begin{frame}{Geometría - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Altura_Rebaba}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.73) (88.0,3.16) (90.0,3.40) (93.3,7.75) (94.0,6.14) (96.0,13.80) (96.0,13.02) (98.0,13.10) (98.7,15.21)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.52) (88.0,2.17) (90.0,4.50) (93.3,6.34) (94.0,9.93) (96.0,20.00) (96.0,11.53) (98.0,19.62) (98.7,23.40)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,3.38) (88.0,4.82) (90.0,5.25) (93.3,7.15) (94.0,0.01) (96.0,23.06) (96.0,11.39) (98.0,21.40) (98.7,17.64)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Angulo}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,156.65) (88.0,141.42) (90.0,136.70) (93.3,127.13) (94.0,105.24) (96.0,149.55) (96.0,121.17) (98.0,160.38) (98.7,154.92)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,155.23) (88.0,137.17) (90.0,129.97) (93.3,116.97) (94.0,87.85) (96.0,45.28) (96.0,60.60) (98.0,165.97) (98.7,158.48)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,145.89) (88.0,123.53) (90.0,122.45) (93.3,112.26) (94.0,89.20) (96.0,53.33) (96.0,47.33) (98.0,123.93) (98.7,153.48)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Profundidad}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.42) (88.0,5.30) (90.0,5.58) (93.3,8.06) (94.0,9.24) (96.0,9.90) (96.0,7.50) (98.0,12.98) (98.7,15.42)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,4.28) (88.0,8.20) (90.0,8.14) (93.3,10.13) (94.0,13.00) (96.0,31.43) (96.0,21.00) (98.0,16.38) (98.7,23.46)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,5.85) (88.0,10.47) (90.0,11.36) (93.3,12.99) (94.0,0.02) (96.0,27.77) (96.0,27.85) (98.0,19.62) (98.7,16.27)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Rugosidad de Perfil (R)}
+\begin{frame}{Rugosidad R (1/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Ra}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.35) (88.0,0.70) (90.0,1.33) (93.3,2.56) (94.0,2.09) (96.0,3.07) (96.0,2.90) (98.0,1.51) (98.7,2.89)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.35) (88.0,0.57) (90.0,0.42) (93.3,0.53) (94.0,1.63) (96.0,6.63) (96.0,5.79) (98.0,2.85) (98.7,4.06)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.57) (88.0,1.35) (90.0,0.92) (93.3,1.08) (94.0,1.51) (96.0,5.92) (96.0,5.64) (98.0,6.89) (98.7,2.95)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rc}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.38) (88.0,4.57) (90.0,6.51) (93.3,8.71) (94.0,17.52) (96.0,13.64) (96.0,12.60) (98.0,6.08) (98.7,10.18)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.60) (88.0,2.44) (90.0,1.64) (93.3,3.19) (94.0,9.99) (96.0,25.58) (96.0,22.90) (98.0,11.69) (98.7,18.52)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.55) (88.0,6.55) (90.0,5.00) (93.3,7.35) (94.0,6.75) (96.0,26.40) (96.0,26.59) (98.0,24.00) (98.7,11.02)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rdq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.07) (88.0,0.17) (90.0,0.30) (93.3,0.46) (94.0,0.30) (96.0,0.55) (96.0,0.49) (98.0,0.32) (98.7,0.53)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.68) (88.0,0.08) (90.0,0.08) (93.3,0.14) (94.0,0.22) (96.0,0.81) (96.0,1.17) (98.0,0.39) (98.7,0.66)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.22) (88.0,0.22) (90.0,0.20) (93.3,0.28) (94.0,0.26) (96.0,1.39) (96.0,1.42) (98.0,1.02) (98.7,0.38)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (2/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rku}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.65) (88.0,27.68) (90.0,4.55) (93.3,3.25) (94.0,7.31) (96.0,5.02) (96.0,3.96) (98.0,9.67) (98.7,4.62)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.67) (88.0,4.20) (90.0,3.39) (93.3,14.98) (94.0,6.45) (96.0,5.04) (96.0,3.55) (98.0,11.04) (98.7,5.47)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,41.42) (88.0,7.54) (90.0,7.58) (93.3,19.23) (94.0,13.07) (96.0,4.88) (96.0,7.75) (98.0,2.72) (98.7,3.67)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rmax}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.80) (88.0,9.91) (90.0,12.62) (93.3,14.31) (94.0,24.47) (96.0,26.48) (96.0,23.01) (98.0,14.87) (98.7,18.47)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.85) (88.0,4.79) (90.0,3.40) (93.3,6.91) (94.0,21.57) (96.0,50.82) (96.0,35.87) (98.0,17.96) (98.7,28.82)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,12.24) (88.0,13.72) (90.0,8.27) (93.3,15.00) (94.0,16.08) (96.0,50.61) (96.0,49.34) (98.0,40.27) (98.7,19.67)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rp}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.58) (88.0,7.77) (90.0,8.15) (93.3,7.32) (94.0,14.46) (96.0,11.19) (96.0,8.61) (98.0,5.37) (98.7,9.24)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.58) (88.0,2.89) (90.0,2.23) (93.3,5.15) (94.0,16.40) (96.0,31.69) (96.0,23.95) (98.0,7.61) (98.7,17.67)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,10.37) (88.0,9.49) (90.0,6.70) (93.3,10.90) (94.0,12.36) (96.0,29.92) (96.0,32.74) (98.0,19.96) (98.7,7.93)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (3/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.44) (88.0,1.10) (90.0,1.92) (93.3,3.13) (94.0,3.46) (96.0,4.15) (96.0,4.02) (98.0,2.07) (98.7,3.56)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.45) (88.0,0.74) (90.0,0.53) (93.3,0.75) (94.0,2.57) (96.0,8.60) (96.0,7.56) (98.0,3.62) (98.7,5.59)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.03) (88.0,2.06) (90.0,1.36) (93.3,1.82) (94.0,2.16) (96.0,8.24) (96.0,8.84) (98.0,8.44) (98.7,3.69)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rsk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.25) (88.0,3.00) (90.0,1.26) (93.3,-0.31) (94.0,1.68) (96.0,-0.82) (96.0,-1.33) (98.0,-1.20) (98.7,-0.14)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,-0.17) (88.0,0.43) (90.0,0.29) (93.3,1.70) (94.0,2.57) (96.0,0.78) (96.0,0.85) (98.0,-0.65) (98.7,1.16)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,4.59) (88.0,1.31) (90.0,1.41) (93.3,2.71) (94.0,2.05) (96.0,0.68) (96.0,2.00) (98.0,-0.10) (98.7,-0.54)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Rsm}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,70.32) (88.0,191.79) (90.0,129.68) (93.3,93.41) (94.0,465.18) (96.0,126.83) (96.0,101.18) (98.0,114.40) (98.7,77.24)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,100.54) (88.0,83.06) (90.0,76.79) (93.3,115.88) (94.0,169.79) (96.0,98.93) (96.0,107.77) (98.0,132.80) (98.7,161.74)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,61.94) (88.0,141.85) (90.0,121.34) (93.3,237.38) (94.0,123.82) (96.0,88.27) (96.0,132.75) (98.0,108.57) (98.7,104.97)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad R (4/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\scriptsize \textbf{Rv}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.36) (88.0,2.24) (90.0,4.56) (93.3,7.74) (94.0,10.00) (96.0,15.70) (96.0,16.09) (98.0,9.89) (98.7,10.17)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.79) (88.0,2.00) (90.0,1.36) (93.3,1.79) (94.0,5.16) (96.0,19.14) (96.0,15.20) (98.0,12.09) (98.7,11.24)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,1.86) (88.0,5.70) (90.0,2.60) (93.3,4.10) (94.0,4.57) (96.0,22.81) (96.0,16.59) (98.0,25.43) (98.7,13.13)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.48\textwidth}
+      \centering
+      {\scriptsize \textbf{Rz}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.07) (88.0,5.10) (90.0,8.11) (93.3,11.79) (94.0,13.73) (96.0,16.02) (96.0,17.51) (98.0,9.05) (98.7,14.49)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.21) (88.0,3.66) (90.0,2.49) (93.3,3.89) (94.0,11.88) (96.0,37.23) (96.0,30.67) (98.0,14.18) (98.7,22.27)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,4.88) (88.0,7.56) (90.0,6.91) (93.3,7.23) (94.0,9.27) (96.0,37.39) (96.0,36.97) (98.0,31.28) (98.7,15.38)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Rugosidad Superficial (S)}
+\begin{frame}{Rugosidad S (1/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sa}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.27) (88.0,1.93) (90.0,2.51) (93.3,2.67) (94.0,4.73) (96.0,3.61) (96.0,2.44) (98.0,3.23) (98.7,3.46)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.54) (88.0,3.25) (90.0,3.32) (93.3,12.92) (94.0,7.43) (96.0,13.56) (96.0,10.13) (98.0,4.41) (98.7,7.34)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.13) (88.0,4.56) (90.0,5.38) (93.3,6.41) (94.0,10.79) (96.0,16.74) (96.0,13.48) (98.0,7.38) (98.7,6.50)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{S10z}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,6.08) (88.0,16.21) (90.0,14.93) (93.3,19.28) (94.0,26.86) (96.0,36.86) (96.0,27.13) (98.0,18.49) (98.7,19.22)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,6.37) (88.0,17.39) (90.0,15.09) (93.3,62.41) (94.0,36.19) (96.0,64.67) (96.0,43.81) (98.0,26.70) (98.7,39.04)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,16.74) (88.0,30.60) (90.0,23.44) (93.3,28.82) (94.0,42.86) (96.0,81.88) (96.0,59.29) (98.0,42.51) (98.7,34.11)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.46) (88.0,2.42) (90.0,3.03) (93.3,3.42) (94.0,5.79) (96.0,4.81) (96.0,3.52) (98.0,3.86) (98.7,4.15)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.78) (88.0,3.77) (90.0,3.91) (93.3,15.12) (94.0,8.65) (96.0,16.42) (96.0,11.74) (98.0,5.46) (98.7,8.66)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.51) (88.0,5.55) (90.0,6.08) (93.3,7.33) (94.0,11.91) (96.0,20.09) (96.0,16.06) (98.0,9.10) (98.7,7.82)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (2/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sp}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,5.22) (88.0,16.43) (90.0,10.61) (93.3,14.33) (94.0,21.15) (96.0,15.70) (96.0,10.11) (98.0,8.82) (98.7,12.90)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,6.37) (88.0,17.99) (90.0,15.87) (93.3,39.05) (94.0,24.12) (96.0,39.04) (96.0,27.28) (98.0,21.76) (98.7,23.91)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,15.94) (88.0,25.61) (90.0,15.77) (93.3,19.76) (94.0,25.02) (96.0,39.02) (96.0,26.75) (98.0,26.40) (98.7,15.74)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sdq}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.22) (88.0,0.46) (90.0,0.46) (93.3,0.63) (94.0,0.95) (96.0,0.88) (96.0,0.79) (98.0,0.64) (98.7,0.70)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.26) (88.0,0.49) (90.0,0.56) (93.3,2.07) (94.0,1.52) (96.0,3.47) (96.0,2.47) (98.0,0.94) (98.7,1.66)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.37) (88.0,0.65) (90.0,0.71) (93.3,0.88) (94.0,1.51) (96.0,3.62) (96.0,2.97) (98.0,1.50) (98.7,1.26)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sdr}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,2.29) (88.0,9.39) (90.0,9.75) (93.3,16.39) (94.0,35.72) (96.0,28.45) (96.0,21.64) (98.0,19.02) (98.7,22.95)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.44) (88.0,10.92) (90.0,14.82) (93.3,128.73) (94.0,71.40) (96.0,327.97) (96.0,163.75) (98.0,34.09) (98.7,93.71)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,6.11) (88.0,16.79) (90.0,20.54) (93.3,30.48) (94.0,64.96) (96.0,336.71) (96.0,238.42) (98.0,75.07) (98.7,62.60)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (3/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,4.26) (88.0,6.49) (90.0,8.07) (93.3,6.97) (94.0,13.70) (96.0,9.49) (96.0,6.29) (98.0,7.75) (98.7,11.63)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,4.53) (88.0,10.15) (90.0,10.37) (93.3,26.41) (94.0,24.20) (96.0,28.89) (96.0,20.67) (98.0,14.33) (98.7,18.15)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,9.98) (88.0,21.85) (90.0,24.62) (93.3,1.27) (94.0,26.07) (96.0,15.50) (96.0,25.70) (98.0,13.70) (98.7,22.33)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sku}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,1.94) (88.0,8.25) (90.0,3.30) (93.3,3.23) (94.0,3.20) (96.0,6.11) (96.0,9.64) (98.0,3.35) (98.7,2.43)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,2.21) (88.0,3.19) (90.0,2.52) (93.3,2.17) (94.0,2.20) (96.0,2.41) (96.0,2.00) (98.0,3.12) (98.7,2.33)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,3.15) (88.0,3.02) (90.0,1.81) (93.3,1.82) (94.0,1.57) (96.0,2.53) (96.0,2.12) (98.0,2.75) (98.7,2.70)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Spk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.90) (88.0,3.09) (90.0,2.94) (93.3,3.14) (94.0,7.48) (96.0,3.14) (96.0,2.62) (98.0,1.50) (98.7,3.67)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,1.77) (88.0,2.72) (90.0,4.57) (93.3,3.74) (94.0,7.13) (96.0,10.07) (96.0,4.96) (98.0,3.41) (98.7,6.21)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.61) (88.0,8.44) (90.0,4.98) (93.3,100.00) (94.0,8.04) (96.0,2.75) (96.0,4.37) (98.0,10.69) (98.7,2.70)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Rugosidad S (4/4) - 200 ns}
+  \centering
+  \begin{columns}[c]
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Ssk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.11) (88.0,1.15) (90.0,0.44) (93.3,-0.35) (94.0,0.24) (96.0,-1.28) (96.0,-1.81) (98.0,-0.69) (98.7,0.36)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.33) (88.0,0.17) (90.0,0.43) (93.3,-0.09) (94.0,0.30) (96.0,-0.50) (96.0,-0.45) (98.0,-0.34) (98.7,0.27)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,0.41) (88.0,-0.10) (90.0,-0.05) (93.3,-0.03) (94.0,-0.10) (96.0,-0.89) (96.0,-0.70) (98.0,0.60) (98.7,-0.70)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Sv}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,3.13) (88.0,4.86) (90.0,7.12) (93.3,10.48) (94.0,15.11) (96.0,25.86) (96.0,19.92) (98.0,14.17) (98.7,10.52)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,3.83) (88.0,7.88) (90.0,7.19) (93.3,39.26) (94.0,18.43) (96.0,41.38) (96.0,26.48) (98.0,19.37) (98.7,25.21)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,5.38) (88.0,13.47) (90.0,12.63) (93.3,13.85) (94.0,24.43) (96.0,53.38) (96.0,36.54) (98.0,23.50) (98.7,27.02)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+    \hfill
+    \begin{column}{0.31\textwidth}
+      \centering
+      {\scriptsize \textbf{Svk}}\\
+      \begin{tikzpicture}
+        \begin{axis}[
+          width=\linewidth,
+          height=3.8cm,
+          scale only axis,
+          grid=major,
+          grid style={dashed, gray!30},
+          xlabel={Solapamiento (\%)},
+          ylabel={$\mu m$},
+          label style={font=\tiny},
+          tick label style={font=\tiny},
+          legend style={font=\tiny, at={(0.5,1.03)}, anchor=south, draw=none, fill=none, column sep=3pt},
+          legend columns=-1,
+        ]
+          \addplot[color=blue, mark=square*, mark size=1.2pt] coordinates { (80.0,0.44) (88.0,0.65) (90.0,1.52) (93.3,4.88) (94.0,5.32) (96.0,8.23) (96.0,6.72) (98.0,5.77) (98.7,1.75)  };
+          \addlegendentry{P30}
+          \addplot[color=red, mark=*, mark size=1.2pt] coordinates { (80.0,0.60) (88.0,1.76) (90.0,0.63) (93.3,17.30) (94.0,1.92) (96.0,26.90) (96.0,14.46) (98.0,5.85) (98.7,3.07)  };
+          \addlegendentry{P50}
+          \addplot[color=olive, mark=triangle*, mark size=1.2pt] coordinates { (80.0,2.55) (88.0,19.51) (90.0,1.69) (93.3,3.60) (94.0,4.87) (96.0,23.09) (96.0,14.25) (98.0,9.25) (98.7,21.92)  };
+          \addlegendentry{P70}
+        \end{axis}
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+\end{frame}
