@@ -1,0 +1,692 @@
+<html><head>
+<meta charset="utf-8"/>
+<style>
+
+body {
+
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;         /*Chrome all*/
+
+    -moz-user-select: none;             /*Firefox all*/
+
+    -ms-user-select: none;              /*IE 10+*/
+
+    user-select: none;                 /*Likely future*/
+
+    font-family: 'Segoe UI', Helvetica;
+
+    font-size: 13px;
+
+}
+
+
+
+.note {
+
+    margin: 16px;
+
+    padding: 3px 10px;
+
+    border: 1px solid transparent;
+
+}
+
+.note > div {
+
+    display: none;
+
+    white-space: pre-wrap;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+
+}
+
+.note > textarea,
+
+.note > div{
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    width: 100%;
+
+    min-height: 34px;
+
+    overflow: hidden;
+
+    resize:none;
+
+    border:none;
+
+    margin-right: 20px;
+
+}
+
+.note > textarea:focus{ /*remove browser's default blue glow focus border */
+
+    outline: none;
+
+}
+
+
+
+.emptyline {
+
+    background-color:white;
+
+    border:none;
+
+}
+
+
+
+.tableselectioncontainer {
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-top: 8px;
+
+    margin-left: 16px;
+
+    margin-bottom: 5px;
+
+    margin-right: 6px;
+
+    padding: 10px 16px 8px 16px;
+
+    background: white;
+
+}
+
+
+
+th {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-weight: normal;
+
+    padding-right: 13pt;
+
+    color: black;
+
+}
+
+
+
+td {
+
+    vertical-align: top;
+
+    font-size: 13px;
+
+    padding-right: 7px;
+
+    padding-left: 7px;
+
+    white-space: nowrap;
+
+    background-color: white;
+
+}
+
+
+
+a{
+
+    -webkit-user-drag: none;
+
+}
+
+
+
+colgroup {
+
+    border-bottom: 2px solid transparent;
+
+}
+
+
+
+.footnote {
+
+    font-style: italic;
+
+    font-size: 11px;
+
+    margin-left: 12px;
+
+    margin-top: 12px;
+
+}
+
+
+
+.nonitalic{
+
+    font-style:normal;
+
+}
+
+
+
+.outmessage {
+
+    font-weight: 600;
+
+    font-family: 'Segoe UI', Helvetica;
+
+    display:table;
+
+    border: 1px solid transparent;
+
+    margin-left: 16px;
+
+    margin-top: 8px;
+
+    padding: 3px 11px;
+
+    white-space: nowrap;
+
+}
+
+
+
+td.lft {
+
+    text-align: left;
+
+}
+
+
+
+.leftpadding{
+
+    padding-left: 20px;
+
+}
+
+
+
+td.rt {
+
+    text-align: right;
+
+}
+
+
+
+td.cen {
+
+    text-align: center;
+
+}
+
+
+
+.tlabel {
+
+    background-color: white;
+
+    color: black;
+
+    font-size: 13px;
+
+}
+
+
+
+td.hr {
+
+    border-bottom: thin solid black;
+
+}
+
+
+
+.tdata {
+
+    background-color: white;
+
+    color: black;
+
+    font-size: .9em;
+
+    font-weight: normal;
+
+}
+
+
+
+.tlabel td {
+
+	vertical-align: bottom;
+
+    font-size: 1em;
+
+}
+
+
+
+.link {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 16px;
+
+    color: #2a6db3;
+
+    text-decoration:none;
+
+}
+
+
+
+.link:hover {
+
+    text-decoration: underline;
+
+    cursor:pointer;
+
+}
+
+
+
+.importedSessionText {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 16px;
+
+    color: #2a6db3;
+
+    margin-left: 16px;
+
+    margin-top: 8px;
+
+    padding: 6px 16px;
+
+    display:table;
+
+}
+
+
+
+.builtin {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 16px;
+
+    color: #2a6db3;
+
+    margin-left: 16px;
+
+    margin-top: 8px;
+
+    padding: 6px 16px;
+
+    display:table;
+
+}
+
+
+
+.paragraph {
+
+    font-family: 'Segoe UI', Helvetica;
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-left: 16px;
+
+    margin-right: 4px;
+
+    margin-top: 8px;
+
+    padding: 3px 16px
+
+}
+
+.paragraph + .paragraph{
+
+	margin-top: 0px;
+
+}
+
+
+
+.subtitle{
+
+    font-family: 'Segoe UI', Helvetica;
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-left: -16px;
+
+    margin-top: 8px;
+
+    padding: 3px 16px
+
+}
+
+
+
+.command-section {
+
+    display: block;
+
+    margin-top: 2px;
+
+    padding-bottom: 2px;
+
+    width: 775px;
+
+    border: 1px solid transparent;
+
+    background-color:white; /* THIS ISN'T NEEDED - WE IS SET TO GET THE CORRECT COLOR WHEN DOING HTML2CANVAS - I FOUND THAT HTML2CANVAS HAS A PROPERTY WE CAN USE INSTEAD*/
+
+
+
+}
+
+
+
+.command-section.collapsed{
+
+    padding-bottom: 0px;
+
+}
+
+.command-section .expander{
+
+    content:url(openexpander.png);
+
+}
+
+.command-section.collapsed .expander{
+
+    content:url(closeexpander.png);
+
+}
+
+.command-section.hover .commandtitlesection,
+
+.command-section.selected .commandtitlesection{
+
+    /*Use to reduce the padding-left to prevent the text
+
+      from moving to the right when the expander is added*/
+
+    padding-left: 0px;
+
+}
+
+
+
+
+
+.commandtitlesection {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 21px;
+
+    color: #004d72;
+
+    padding-left: 21px;
+
+    padding-top: 3px;
+
+    padding-bottom: 3px;
+
+    white-space: nowrap;
+
+    overflow:hidden;
+
+}
+
+
+
+.section {
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-left: 8px;
+
+    padding-bottom: 6px;
+
+    padding-top: 8px;
+
+    padding-right: 16px;
+
+}
+
+
+
+.commandsectionheader {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 18.5px;
+
+    color: #004d72;
+
+    padding-left: 18px;
+
+    white-space: nowrap;
+
+    position:relative; /*for positioning downarrow*/
+
+    padding-right: 14px;  /*space for downarrow*/
+
+}
+
+
+
+.commandbutton {
+
+    display: inline;
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 12px;
+
+    text-align: right;
+
+    border: 1px solid #a9a9a9;
+
+    border-radius: 4px;
+
+    color: #6b6b6b;
+
+    cursor: pointer;
+
+    float:right; 
+
+    margin-top: 4px;
+
+    margin-bottom: 4px;
+
+    margin-right:20px;
+
+    padding-left: 9px;
+
+    padding-bottom: 1px;
+
+}
+
+
+
+
+
+.menudownarrow {
+
+    margin-left: 7px;
+
+    margin-right: 7px;
+
+    margin-bottom: 2px;
+
+    content:url(menubuttonarrow.png);
+
+}
+
+
+
+.downarrow {
+
+    position:absolute;
+
+    right: 0px;
+
+    top: 4px;
+
+    visibility:hidden;
+
+    content:url(menubuttonarrow.png);
+
+}
+
+
+
+
+
+.tabletitle {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 17px;
+
+    color: #004d72;
+
+    display:block;
+
+    position:relative; /*for positioning downarrow*/
+
+    padding-right: 14px;  /*space for downarrow*/
+
+}
+
+
+
+.stattable { 
+
+     font-size: 12px;
+
+    margin-top: 6px;
+
+     border-collapse: collapse;
+
+ }
+
+
+
+.error {
+
+     font-weight: 600;
+
+     color:#d54133;
+
+ }
+
+ 
+
+.hover {
+
+    border: 1px solid #c6c6c6;
+
+    border-radius: 4px;
+
+}
+
+
+
+.columnhover {
+
+    border: 1px solid #c6c6c6;
+
+    border-radius: 3px;
+
+}
+
+
+
+.columnpartialhover {
+
+    border-left: 1px solid #c6c6c6;
+
+    border-top: 1px solid #c6c6c6;
+
+    border-bottom: 1px solid #c6c6c6;
+
+    border-radius: 3px;
+
+}
+
+
+
+.columnselect {
+
+    border: 2px solid;
+
+    border-radius: 3px;
+
+    border-color : #2b99cc;
+
+}
+
+.columnselect.inactive {
+
+    border-color: #c6c6c6;
+
+}
+
+.selected {
+
+    box-shadow: 0 0 0 2px #2b99cc inset;
+
+    border-radius: 5px;
+
+}
+
+.selected.inactive {
+
+    box-shadow: 0 0 0 2px #c6c6c6 inset;
+
+}
+
+
+
+.labelCollapse{
+
+	margin-bottom:-1.5em;
+
+	width: 100%;
+
+}
+
+
+
+
+
+.link:hover { text-decoration: none; cursor: default;}
+
+body {-webkit-touch-callout: all; -webkit-user-select: all; -khtml-user-select: all;-moz-user-select: all; -ms-user-select: element; user-select:all;} 
+
+
+
+</style>
+</head><body><div class="command-section" id="adaed904-6d2c-4925-9692-3858deeb8cd6" style="width: 775px;"><div class="commandtitlesection" id="7cf44782-a1d5-43ce-a9d9-4da104f3f528" title="Regresión factorial: Sk vs. Potencia (W); Frecuencia (kHz); Velocidad (mm/s); Ancho_Pulso (ns)">Regresión factorial: Sk vs. Potencia (W); Frecuencia (kHz); ... Pulso (ns)</div><div class="expander-section"><div class="outmessage" id="0d988515-a88e-49e9-8321-a694e744b23e">* NOTA * Los datos en la hoja de trabajo no parecen coincidir con la columna de puntos<br/>centrales.</div><div class="outmessage" id="0ea2d816-512d-4ebf-89ff-5ede1dcd2e31">* NOTA * Este diseño incluye algunas corridas divergentes.</div><div class="tableselectioncontainer"><div class="tabletitle" id="ed7e170c-9ac6-48db-80cf-faf822a61c0c">Análisis de Varianza</div><table class="stattable" id="ed7e170c-9ac6-48db-80cf-faf822a61c0c"><colgroup cid="0" id="9d062a72-3648-4ea9-a363-6a0607d98174"></colgroup><colgroup cid="1" id="3c145b54-d5a0-44c2-96eb-4dce137d92b7"></colgroup><colgroup cid="2" id="0cb38f24-3dbf-42a8-a0c0-96306a182a21"></colgroup><colgroup cid="3" id="2cdad275-4782-45a9-986f-f248d4edc85a"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Fuente</td><td cid="1" class="rt hr">GL</td><td cid="2" class="rt hr">SC Ajust.</td><td cid="3" class="rt hr">MC Ajust.</td></tr><tr class="tdata"><td cid="0" class="lft">Modelo</td><td cid="1" class="rt">15</td><td cid="2" class="rt">2186,75</td><td cid="3" class="rt">145,783</td></tr><tr class="tdata"><td cid="0" class="lft">  Lineal</td><td cid="1" class="rt">4</td><td cid="2" class="rt">1865,01</td><td cid="3" class="rt">466,252</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">843,43</td><td cid="3" class="rt">843,432</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">589,19</td><td cid="3" class="rt">589,191</td></tr><tr class="tdata"><td cid="0" class="lft">    Velocidad (mm/s)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">361,13</td><td cid="3" class="rt">361,126</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">71,26</td><td cid="3" class="rt">71,260</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 2 términos</td><td cid="1" class="rt">6</td><td cid="2" class="rt">239,89</td><td cid="3" class="rt">39,982</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">1,68</td><td cid="3" class="rt">1,681</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Velocidad (mm/s)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">0,48</td><td cid="3" class="rt">0,477</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">26,43</td><td cid="3" class="rt">26,434</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">137,12</td><td cid="3" class="rt">137,121</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">71,72</td><td cid="3" class="rt">71,718</td></tr><tr class="tdata"><td cid="0" class="lft">    Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">2,46</td><td cid="3" class="rt">2,463</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 3 términos</td><td cid="1" class="rt">4</td><td cid="2" class="rt">13,39</td><td cid="3" class="rt">3,346</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">4,78</td><td cid="3" class="rt">4,781</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">0,44</td><td cid="3" class="rt">0,441</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">0,15</td><td cid="3" class="rt">0,152</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">8,01</td><td cid="3" class="rt">8,012</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 4 términos</td><td cid="1" class="rt">1</td><td cid="2" class="rt">68,46</td><td cid="3" class="rt">68,459</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">68,46</td><td cid="3" class="rt">68,459</td></tr><tr class="tdata"><td cid="0" class="lft">Error</td><td cid="1" class="rt">65</td><td cid="2" class="rt">1804,14</td><td cid="3" class="rt">27,756</td></tr><tr class="tdata"><td cid="0" class="lft">Total</td><td cid="1" class="rt">80</td><td cid="2" class="rt">3990,89</td><td cid="3" class="emptyline">  </td></tr></tbody></table><table class="stattable" id="ed7e170c-9ac6-48db-80cf-faf822a61c0c"><colgroup cid="0" id="9d062a72-3648-4ea9-a363-6a0607d98174"></colgroup><colgroup cid="1" id="a7cf412a-531e-43d7-9cd4-a1babee53e67"></colgroup><colgroup cid="2" id="f902d7a6-56f5-4cab-83c4-3a9609675d3c"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Fuente</td><td cid="1" class="rt hr">Valor F</td><td cid="2" class="rt hr">Valor p</td></tr><tr class="tdata"><td cid="0" class="lft">Modelo</td><td cid="1" class="rt">5,25</td><td cid="2" class="rt">0,000</td></tr><tr class="tdata"><td cid="0" class="lft">  Lineal</td><td cid="1" class="rt">16,80</td><td cid="2" class="rt">0,000</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)</td><td cid="1" class="rt">30,39</td><td cid="2" class="rt">0,000</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)</td><td cid="1" class="rt">21,23</td><td cid="2" class="rt">0,000</td></tr><tr class="tdata"><td cid="0" class="lft">    Velocidad (mm/s)</td><td cid="1" class="rt">13,01</td><td cid="2" class="rt">0,001</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)</td><td cid="1" class="rt">2,57</td><td cid="2" class="rt">0,114</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 2 términos</td><td cid="1" class="rt">1,44</td><td cid="2" class="rt">0,213</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)</td><td cid="1" class="rt">0,06</td><td cid="2" class="rt">0,806</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Velocidad (mm/s)</td><td cid="1" class="rt">0,02</td><td cid="2" class="rt">0,896</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,95</td><td cid="2" class="rt">0,333</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">4,94</td><td cid="2" class="rt">0,030</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">2,58</td><td cid="2" class="rt">0,113</td></tr><tr class="tdata"><td cid="0" class="lft">    Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,09</td><td cid="2" class="rt">0,767</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 3 términos</td><td cid="1" class="rt">0,12</td><td cid="2" class="rt">0,975</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">0,17</td><td cid="2" class="rt">0,679</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,02</td><td cid="2" class="rt">0,900</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,01</td><td cid="2" class="rt">0,941</td></tr><tr class="tdata"><td cid="0" class="lft">    Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,29</td><td cid="2" class="rt">0,593</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 4 términos</td><td cid="1" class="rt">2,47</td><td cid="2" class="rt">0,121</td></tr><tr class="tdata"><td cid="0" class="lft">    Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">2,47</td><td cid="2" class="rt">0,121</td></tr><tr class="tdata"><td cid="0" class="lft">Error</td><td cid="1" class="emptyline">  </td><td cid="2" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="lft">Total</td><td cid="1" class="emptyline">  </td><td cid="2" class="emptyline">  </td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="22f5e11f-cc30-406f-af60-2c09a54e4f95">Resumen del modelo</div><table class="stattable" id="22f5e11f-cc30-406f-af60-2c09a54e4f95"><colgroup cid="0" id="d6fa3c92-f400-415b-9a6f-62e14ba878e7"></colgroup><colgroup cid="1" id="c072a00f-5215-4087-92ac-04816cae9b39"></colgroup><colgroup cid="2" id="ab39ad59-b2bc-48fd-9d89-db78d7c3ee6b"></colgroup><colgroup cid="3" id="11169c3a-6e42-4d50-9976-65c749a541ab"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="rt hr">S</td><td cid="1" class="rt hr">R-cuad.</td><td cid="2" class="rt hr">R-cuad.<br/>(ajustado)</td><td cid="3" class="rt hr">R-cuad.<br/>(pred)</td></tr><tr class="tdata"><td cid="0" class="rt">5,26840</td><td cid="1" class="rt">54,79%</td><td cid="2" class="rt">44,36%</td><td cid="3" class="rt">9,55%</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="23829bfc-4b24-40f5-93f3-0fb63e307fb1">Coeficientes codificados</div><table class="stattable" id="23829bfc-4b24-40f5-93f3-0fb63e307fb1"><colgroup cid="0" id="b76149a7-e3a0-460c-8f5a-9485fd727b20"></colgroup><colgroup cid="1" id="20fa3f1a-cd7a-4c9a-a39e-8d83cc97f3ea"></colgroup><colgroup cid="2" id="c37b3055-1ee7-4e57-bab4-347660bb3151"></colgroup><colgroup cid="3" id="4e579b10-3ea9-4d67-bdd7-0866cca7b7dd"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Término</td><td cid="1" class="rt hr">Efecto</td><td cid="2" class="rt hr">Coef</td><td cid="3" class="rt hr">EE del<br/>coef.</td></tr><tr class="tdata"><td cid="0" class="lft">Constante</td><td cid="1" class="emptyline">  </td><td cid="2" class="rt">13,392</td><td cid="3" class="rt">0,585</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)</td><td cid="1" class="rt">7,904</td><td cid="2" class="rt">3,952</td><td cid="3" class="rt">0,717</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)</td><td cid="1" class="rt">6,606</td><td cid="2" class="rt">3,303</td><td cid="3" class="rt">0,717</td></tr><tr class="tdata"><td cid="0" class="lft">Velocidad (mm/s)</td><td cid="1" class="rt">-5,172</td><td cid="2" class="rt">-2,586</td><td cid="3" class="rt">0,717</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)</td><td cid="1" class="rt">2,298</td><td cid="2" class="rt">1,149</td><td cid="3" class="rt">0,717</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)</td><td cid="1" class="rt">-0,432</td><td cid="2" class="rt">-0,216</td><td cid="3" class="rt">0,878</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Velocidad (mm/s)</td><td cid="1" class="rt">-0,230</td><td cid="2" class="rt">-0,115</td><td cid="3" class="rt">0,878</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Ancho_Pulso (ns)</td><td cid="1" class="rt">1,714</td><td cid="2" class="rt">0,857</td><td cid="3" class="rt">0,878</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">3,903</td><td cid="2" class="rt">1,952</td><td cid="3" class="rt">0,878</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-2,823</td><td cid="2" class="rt">-1,411</td><td cid="3" class="rt">0,878</td></tr><tr class="tdata"><td cid="0" class="lft">Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,523</td><td cid="2" class="rt">0,262</td><td cid="3" class="rt">0,878</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">0,89</td><td cid="2" class="rt">0,45</td><td cid="3" class="rt">1,08</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-0,27</td><td cid="2" class="rt">-0,14</td><td cid="3" class="rt">1,08</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,16</td><td cid="2" class="rt">0,08</td><td cid="3" class="rt">1,08</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-1,16</td><td cid="2" class="rt">-0,58</td><td cid="3" class="rt">1,08</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-4,14</td><td cid="2" class="rt">-2,07</td><td cid="3" class="rt">1,32</td></tr></tbody></table><table class="stattable" id="23829bfc-4b24-40f5-93f3-0fb63e307fb1"><colgroup cid="0" id="b76149a7-e3a0-460c-8f5a-9485fd727b20"></colgroup><colgroup cid="1" id="38782e8c-ab99-46fe-9eb9-ea54554541af"></colgroup><colgroup cid="2" id="ac060fd4-0dc3-426f-9630-7495a1b7c819"></colgroup><colgroup cid="3" id="63888aa6-df4b-4624-bf0b-8548d5d4ae4c"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Término</td><td cid="1" class="rt hr">Valor T</td><td cid="2" class="rt hr">Valor p</td><td cid="3" class="rt hr">FIV</td></tr><tr class="tdata"><td cid="0" class="lft">Constante</td><td cid="1" class="rt">22,88</td><td cid="2" class="rt">0,000</td><td cid="3" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)</td><td cid="1" class="rt">5,51</td><td cid="2" class="rt">0,000</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)</td><td cid="1" class="rt">4,61</td><td cid="2" class="rt">0,000</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Velocidad (mm/s)</td><td cid="1" class="rt">-3,61</td><td cid="2" class="rt">0,001</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)</td><td cid="1" class="rt">1,60</td><td cid="2" class="rt">0,114</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)</td><td cid="1" class="rt">-0,25</td><td cid="2" class="rt">0,806</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Velocidad (mm/s)</td><td cid="1" class="rt">-0,13</td><td cid="2" class="rt">0,896</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,98</td><td cid="2" class="rt">0,333</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">2,22</td><td cid="2" class="rt">0,030</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-1,61</td><td cid="2" class="rt">0,113</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,30</td><td cid="2" class="rt">0,767</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)</td><td cid="1" class="rt">0,42</td><td cid="2" class="rt">0,679</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-0,13</td><td cid="2" class="rt">0,900</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">0,07</td><td cid="2" class="rt">0,941</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-0,54</td><td cid="2" class="rt">0,593</td><td cid="3" class="rt">1,00</td></tr><tr class="tdata"><td cid="0" class="lft">Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td><td cid="1" class="rt">-1,57</td><td cid="2" class="rt">0,121</td><td cid="3" class="rt">1,00</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="c19ce780-cb9f-4393-b5b8-c6ddde777461">Ecuación de regresión en unidades no codificadas</div><table class="stattable" id="c19ce780-cb9f-4393-b5b8-c6ddde777461"><colgroup cid="0" id="f3d0b4e0-d0e0-4924-b5c7-bd3696ad1040"></colgroup><colgroup cid="1" id="1f4458b9-d2b3-489c-8e82-8e50b4feb41d"></colgroup><colgroup cid="2" id="24cde1d5-c24c-492b-ae72-3f10d9cc158a"></colgroup><tbody><tr class="tdata"><td cid="0" class="lft">Sk</td><td cid="1" class="lft">=</td><td cid="2" class="lft">-42,7 + 1,074 Potencia (W) + 0,530 Frecuencia (kHz) + 0,117 Velocidad (mm/s)<br/>+ 0,297 Ancho_Pulso (ns) - 0,00979 Potencia (W)*Frecuencia (kHz)<br/>- 0,00341 Potencia (W)*Velocidad (mm/s) - 0,00520 Potencia (W)*Ancho_Pulso (ns)<br/>- 0,00129 Frecuencia (kHz)*Velocidad (mm/s) - 0,00319 Frecuencia (kHz)*Ancho_Pulso (ns)<br/>- 0,000912 Velocidad (mm/s)*Ancho_Pulso (ns)<br/>+ 0,000033 Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)<br/>+ 0,000059 Potencia (W)*Frecuencia (kHz)*Ancho_Pulso (ns)<br/>+ 0,000021 Potencia (W)*Velocidad (mm/s)*Ancho_Pulso (ns)<br/>+ 0,000009 Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)<br/>- 0,000000 Potencia (W)*Frecuencia (kHz)*Velocidad (mm/s)*Ancho_Pulso (ns)</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="c60483b9-ef9f-437e-ac0a-223bed98abda">Estructura de alias</div><table class="stattable" id="c60483b9-ef9f-437e-ac0a-223bed98abda"><colgroup cid="0" id="fcbe24a5-96a3-48c0-801b-f581ef32f7cd"></colgroup><colgroup cid="1" id="28379436-69d3-4732-a9ae-4de96799ff2d"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Factor</td><td cid="1" class="lft hr">Nombre</td></tr><tr class="tdata"><td cid="0" class="lft">A</td><td cid="1" class="lft">Potencia (W)</td></tr><tr class="tdata"><td cid="0" class="lft">B</td><td cid="1" class="lft">Frecuencia (kHz)</td></tr><tr class="tdata"><td cid="0" class="lft">C</td><td cid="1" class="lft">Velocidad (mm/s)</td></tr><tr class="tdata"><td cid="0" class="lft">D</td><td cid="1" class="lft">Ancho_Pulso (ns)</td></tr></tbody></table><table class="stattable" id="df4a6e5c-5a39-4477-8a15-116f9a0ffccb"><colgroup cid="0" id="6a6cb1c0-98d0-4a2c-a2c0-6579ce38512e"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Alias</td></tr><tr class="tdata"><td cid="0" class="lft">I</td></tr><tr class="tdata"><td cid="0" class="lft">A</td></tr><tr class="tdata"><td cid="0" class="lft">B</td></tr><tr class="tdata"><td cid="0" class="lft">C</td></tr><tr class="tdata"><td cid="0" class="lft">D</td></tr><tr class="tdata"><td cid="0" class="lft">AB</td></tr><tr class="tdata"><td cid="0" class="lft">AC</td></tr><tr class="tdata"><td cid="0" class="lft">AD</td></tr><tr class="tdata"><td cid="0" class="lft">BC</td></tr><tr class="tdata"><td cid="0" class="lft">BD</td></tr><tr class="tdata"><td cid="0" class="lft">CD</td></tr><tr class="tdata"><td cid="0" class="lft">ABC</td></tr><tr class="tdata"><td cid="0" class="lft">ABD</td></tr><tr class="tdata"><td cid="0" class="lft">ACD</td></tr><tr class="tdata"><td cid="0" class="lft">BCD</td></tr><tr class="tdata"><td cid="0" class="lft">ABCD</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="ea216704-7e3e-4b45-a0cc-47682708f002">Ajustes y diagnósticos para observaciones poco comunes</div><table class="stattable" id="ea216704-7e3e-4b45-a0cc-47682708f002"><colgroup cid="0" id="e5a907c0-c9d0-4046-9d58-e7a4f964f989"></colgroup><colgroup cid="1" id="f7c500aa-cb79-4092-a72a-82a5627bd93a"></colgroup><colgroup cid="2" id="ede8659b-3f2f-4333-a46a-d3a4a9c5f2da"></colgroup><colgroup cid="3" id="d52b4639-3942-4b36-8dff-f3e06e0f6996"></colgroup><colgroup cid="4" id="47c041d2-9b51-4858-ba18-98cef2fcddc1"></colgroup><colgroup cid="5" id="354e11ee-fbae-471c-b3a8-3c08f44f2588"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="rt hr">Obs</td><td cid="1" class="rt hr">Sk</td><td cid="2" class="rt hr">Ajuste</td><td cid="3" class="rt hr">Resid</td><td cid="4" class="rt hr">Resid<br/>est.</td><td cid="5" class="lft hr"></td></tr><tr class="tdata"><td cid="0" class="rt">34</td><td cid="1" class="rt">28,89</td><td cid="2" class="rt">16,35</td><td cid="3" class="rt">12,54</td><td cid="4" class="rt">2,65</td><td cid="5" class="lft">R</td></tr><tr class="tdata"><td cid="0" class="rt">54</td><td cid="1" class="rt">26,41</td><td cid="2" class="rt">15,48</td><td cid="3" class="rt">10,92</td><td cid="4" class="rt">2,31</td><td cid="5" class="lft">R</td></tr><tr class="tdata"><td cid="0" class="rt">81</td><td cid="1" class="rt">1,27</td><td cid="2" class="rt">18,28</td><td cid="3" class="rt">-17,01</td><td cid="4" class="rt">-4,49</td><td cid="5" class="lft">R</td></tr></tbody></table><div class="footnote" id="e8d46858-8f13-4b0a-ac2c-b3c1ce48456a">Residuo grande R</div></div></div></div></body></html>

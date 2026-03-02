@@ -1,0 +1,692 @@
+<html><head>
+<meta charset="utf-8"/>
+<style>
+
+body {
+
+    -webkit-touch-callout: none;
+
+    -webkit-user-select: none;         /*Chrome all*/
+
+    -moz-user-select: none;             /*Firefox all*/
+
+    -ms-user-select: none;              /*IE 10+*/
+
+    user-select: none;                 /*Likely future*/
+
+    font-family: 'Segoe UI', Helvetica;
+
+    font-size: 13px;
+
+}
+
+
+
+.note {
+
+    margin: 16px;
+
+    padding: 3px 10px;
+
+    border: 1px solid transparent;
+
+}
+
+.note > div {
+
+    display: none;
+
+    white-space: pre-wrap;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+
+}
+
+.note > textarea,
+
+.note > div{
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    width: 100%;
+
+    min-height: 34px;
+
+    overflow: hidden;
+
+    resize:none;
+
+    border:none;
+
+    margin-right: 20px;
+
+}
+
+.note > textarea:focus{ /*remove browser's default blue glow focus border */
+
+    outline: none;
+
+}
+
+
+
+.emptyline {
+
+    background-color:white;
+
+    border:none;
+
+}
+
+
+
+.tableselectioncontainer {
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-top: 8px;
+
+    margin-left: 16px;
+
+    margin-bottom: 5px;
+
+    margin-right: 6px;
+
+    padding: 10px 16px 8px 16px;
+
+    background: white;
+
+}
+
+
+
+th {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-weight: normal;
+
+    padding-right: 13pt;
+
+    color: black;
+
+}
+
+
+
+td {
+
+    vertical-align: top;
+
+    font-size: 13px;
+
+    padding-right: 7px;
+
+    padding-left: 7px;
+
+    white-space: nowrap;
+
+    background-color: white;
+
+}
+
+
+
+a{
+
+    -webkit-user-drag: none;
+
+}
+
+
+
+colgroup {
+
+    border-bottom: 2px solid transparent;
+
+}
+
+
+
+.footnote {
+
+    font-style: italic;
+
+    font-size: 11px;
+
+    margin-left: 12px;
+
+    margin-top: 12px;
+
+}
+
+
+
+.nonitalic{
+
+    font-style:normal;
+
+}
+
+
+
+.outmessage {
+
+    font-weight: 600;
+
+    font-family: 'Segoe UI', Helvetica;
+
+    display:table;
+
+    border: 1px solid transparent;
+
+    margin-left: 16px;
+
+    margin-top: 8px;
+
+    padding: 3px 11px;
+
+    white-space: nowrap;
+
+}
+
+
+
+td.lft {
+
+    text-align: left;
+
+}
+
+
+
+.leftpadding{
+
+    padding-left: 20px;
+
+}
+
+
+
+td.rt {
+
+    text-align: right;
+
+}
+
+
+
+td.cen {
+
+    text-align: center;
+
+}
+
+
+
+.tlabel {
+
+    background-color: white;
+
+    color: black;
+
+    font-size: 13px;
+
+}
+
+
+
+td.hr {
+
+    border-bottom: thin solid black;
+
+}
+
+
+
+.tdata {
+
+    background-color: white;
+
+    color: black;
+
+    font-size: .9em;
+
+    font-weight: normal;
+
+}
+
+
+
+.tlabel td {
+
+	vertical-align: bottom;
+
+    font-size: 1em;
+
+}
+
+
+
+.link {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 16px;
+
+    color: #2a6db3;
+
+    text-decoration:none;
+
+}
+
+
+
+.link:hover {
+
+    text-decoration: underline;
+
+    cursor:pointer;
+
+}
+
+
+
+.importedSessionText {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 16px;
+
+    color: #2a6db3;
+
+    margin-left: 16px;
+
+    margin-top: 8px;
+
+    padding: 6px 16px;
+
+    display:table;
+
+}
+
+
+
+.builtin {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 16px;
+
+    color: #2a6db3;
+
+    margin-left: 16px;
+
+    margin-top: 8px;
+
+    padding: 6px 16px;
+
+    display:table;
+
+}
+
+
+
+.paragraph {
+
+    font-family: 'Segoe UI', Helvetica;
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-left: 16px;
+
+    margin-right: 4px;
+
+    margin-top: 8px;
+
+    padding: 3px 16px
+
+}
+
+.paragraph + .paragraph{
+
+	margin-top: 0px;
+
+}
+
+
+
+.subtitle{
+
+    font-family: 'Segoe UI', Helvetica;
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-left: -16px;
+
+    margin-top: 8px;
+
+    padding: 3px 16px
+
+}
+
+
+
+.command-section {
+
+    display: block;
+
+    margin-top: 2px;
+
+    padding-bottom: 2px;
+
+    width: 775px;
+
+    border: 1px solid transparent;
+
+    background-color:white; /* THIS ISN'T NEEDED - WE IS SET TO GET THE CORRECT COLOR WHEN DOING HTML2CANVAS - I FOUND THAT HTML2CANVAS HAS A PROPERTY WE CAN USE INSTEAD*/
+
+
+
+}
+
+
+
+.command-section.collapsed{
+
+    padding-bottom: 0px;
+
+}
+
+.command-section .expander{
+
+    content:url(openexpander.png);
+
+}
+
+.command-section.collapsed .expander{
+
+    content:url(closeexpander.png);
+
+}
+
+.command-section.hover .commandtitlesection,
+
+.command-section.selected .commandtitlesection{
+
+    /*Use to reduce the padding-left to prevent the text
+
+      from moving to the right when the expander is added*/
+
+    padding-left: 0px;
+
+}
+
+
+
+
+
+.commandtitlesection {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 21px;
+
+    color: #004d72;
+
+    padding-left: 21px;
+
+    padding-top: 3px;
+
+    padding-bottom: 3px;
+
+    white-space: nowrap;
+
+    overflow:hidden;
+
+}
+
+
+
+.section {
+
+    display: table;
+
+    border: 1px solid transparent;
+
+    margin-left: 8px;
+
+    padding-bottom: 6px;
+
+    padding-top: 8px;
+
+    padding-right: 16px;
+
+}
+
+
+
+.commandsectionheader {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 18.5px;
+
+    color: #004d72;
+
+    padding-left: 18px;
+
+    white-space: nowrap;
+
+    position:relative; /*for positioning downarrow*/
+
+    padding-right: 14px;  /*space for downarrow*/
+
+}
+
+
+
+.commandbutton {
+
+    display: inline;
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 12px;
+
+    text-align: right;
+
+    border: 1px solid #a9a9a9;
+
+    border-radius: 4px;
+
+    color: #6b6b6b;
+
+    cursor: pointer;
+
+    float:right; 
+
+    margin-top: 4px;
+
+    margin-bottom: 4px;
+
+    margin-right:20px;
+
+    padding-left: 9px;
+
+    padding-bottom: 1px;
+
+}
+
+
+
+
+
+.menudownarrow {
+
+    margin-left: 7px;
+
+    margin-right: 7px;
+
+    margin-bottom: 2px;
+
+    content:url(menubuttonarrow.png);
+
+}
+
+
+
+.downarrow {
+
+    position:absolute;
+
+    right: 0px;
+
+    top: 4px;
+
+    visibility:hidden;
+
+    content:url(menubuttonarrow.png);
+
+}
+
+
+
+
+
+.tabletitle {
+
+    font-family: 'Segoe UI semibold', 'Segoe UI', Helvetica;
+
+    font-size: 17px;
+
+    color: #004d72;
+
+    display:block;
+
+    position:relative; /*for positioning downarrow*/
+
+    padding-right: 14px;  /*space for downarrow*/
+
+}
+
+
+
+.stattable { 
+
+     font-size: 12px;
+
+    margin-top: 6px;
+
+     border-collapse: collapse;
+
+ }
+
+
+
+.error {
+
+     font-weight: 600;
+
+     color:#d54133;
+
+ }
+
+ 
+
+.hover {
+
+    border: 1px solid #c6c6c6;
+
+    border-radius: 4px;
+
+}
+
+
+
+.columnhover {
+
+    border: 1px solid #c6c6c6;
+
+    border-radius: 3px;
+
+}
+
+
+
+.columnpartialhover {
+
+    border-left: 1px solid #c6c6c6;
+
+    border-top: 1px solid #c6c6c6;
+
+    border-bottom: 1px solid #c6c6c6;
+
+    border-radius: 3px;
+
+}
+
+
+
+.columnselect {
+
+    border: 2px solid;
+
+    border-radius: 3px;
+
+    border-color : #2b99cc;
+
+}
+
+.columnselect.inactive {
+
+    border-color: #c6c6c6;
+
+}
+
+.selected {
+
+    box-shadow: 0 0 0 2px #2b99cc inset;
+
+    border-radius: 5px;
+
+}
+
+.selected.inactive {
+
+    box-shadow: 0 0 0 2px #c6c6c6 inset;
+
+}
+
+
+
+.labelCollapse{
+
+	margin-bottom:-1.5em;
+
+	width: 100%;
+
+}
+
+
+
+
+
+.link:hover { text-decoration: none; cursor: default;}
+
+body {-webkit-touch-callout: all; -webkit-user-select: all; -khtml-user-select: all;-moz-user-select: all; -ms-user-select: element; user-select:all;} 
+
+
+
+</style>
+</head><body><div class="command-section" id="b49cdf24-aae2-4a21-884f-cafb807c0545" style="width: 775px;"><div class="commandtitlesection" id="6d261469-343e-4e08-9c61-8dea14db7406" title="Regresión factorial: Rc vs. Ancho_Pulso (ns); Densidad_Energia (J/cm²); Solapamiento (%)">Regresión factorial: Rc vs. Ancho_Pulso (ns); ... cm²); Solapamiento (%)</div><div class="expander-section"><div class="outmessage" id="57d02809-43cf-4c14-9e54-36e2dc5d5480">* NOTA * Los datos en la hoja de trabajo no parecen coincidir con las unidades y/o niveles<br/>dados para el diseño.</div><div class="outmessage" id="513d23e2-73eb-47fa-9d8f-bae65ee2268f">* NOTA * Este diseño incluye algunas corridas divergentes.</div><div class="outmessage" id="d181fd43-46ad-4bab-9310-92d60e943a57">* NOTA * Este diseño no es ortogonal.</div><div class="tableselectioncontainer"><div class="tabletitle" id="d0a8d99b-5172-4bf5-9838-ed52aedde558">Análisis de Varianza</div><table class="stattable" id="d0a8d99b-5172-4bf5-9838-ed52aedde558"><colgroup cid="0" id="2b021998-095c-41bd-a090-a24c1ec0827c"></colgroup><colgroup cid="1" id="b2eac5f3-e72e-45de-bb74-485182838363"></colgroup><colgroup cid="2" id="b83285f2-18fa-489e-b992-f07c923d589f"></colgroup><colgroup cid="3" id="bf1de62e-6fa6-4f3c-95f4-c8c1631693a5"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Fuente</td><td cid="1" class="rt hr">GL</td><td cid="2" class="rt hr">SC Ajust.</td><td cid="3" class="rt hr">MC Ajust.</td></tr><tr class="tdata"><td cid="0" class="lft">Modelo</td><td cid="1" class="rt">7</td><td cid="2" class="rt">2687,93</td><td cid="3" class="rt">383,99</td></tr><tr class="tdata"><td cid="0" class="lft">  Lineal</td><td cid="1" class="rt">3</td><td cid="2" class="rt">2607,00</td><td cid="3" class="rt">869,00</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">83,98</td><td cid="3" class="rt">83,98</td></tr><tr class="tdata"><td cid="0" class="lft">    Densidad_Energia (J/cm²)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">353,63</td><td cid="3" class="rt">353,63</td></tr><tr class="tdata"><td cid="0" class="lft">    Solapamiento (%)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">2509,35</td><td cid="3" class="rt">2509,35</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 2 términos</td><td cid="1" class="rt">3</td><td cid="2" class="rt">82,07</td><td cid="3" class="rt">27,36</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)*Densidad_Energia (J/cm²)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">7,60</td><td cid="3" class="rt">7,60</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)*Solapamiento (%)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">10,65</td><td cid="3" class="rt">10,65</td></tr><tr class="tdata"><td cid="0" class="lft">    Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">69,26</td><td cid="3" class="rt">69,26</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 3 términos</td><td cid="1" class="rt">1</td><td cid="2" class="rt">36,00</td><td cid="3" class="rt">36,00</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)*Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">1</td><td cid="2" class="rt">36,00</td><td cid="3" class="rt">36,00</td></tr><tr class="tdata"><td cid="0" class="lft">Error</td><td cid="1" class="rt">73</td><td cid="2" class="rt">2561,30</td><td cid="3" class="rt">35,09</td></tr><tr class="tdata"><td cid="0" class="lft">Total</td><td cid="1" class="rt">80</td><td cid="2" class="rt">5249,23</td><td cid="3" class="emptyline">  </td></tr></tbody></table><table class="stattable" id="d0a8d99b-5172-4bf5-9838-ed52aedde558"><colgroup cid="0" id="2b021998-095c-41bd-a090-a24c1ec0827c"></colgroup><colgroup cid="1" id="8b397e11-1db7-4acc-a996-74648167f47e"></colgroup><colgroup cid="2" id="04e26bc6-ef41-438d-a84d-5b1a2c07b214"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Fuente</td><td cid="1" class="rt hr">Valor F</td><td cid="2" class="rt hr">Valor p</td></tr><tr class="tdata"><td cid="0" class="lft">Modelo</td><td cid="1" class="rt">10,94</td><td cid="2" class="rt">0,000</td></tr><tr class="tdata"><td cid="0" class="lft">  Lineal</td><td cid="1" class="rt">24,77</td><td cid="2" class="rt">0,000</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)</td><td cid="1" class="rt">2,39</td><td cid="2" class="rt">0,126</td></tr><tr class="tdata"><td cid="0" class="lft">    Densidad_Energia (J/cm²)</td><td cid="1" class="rt">10,08</td><td cid="2" class="rt">0,002</td></tr><tr class="tdata"><td cid="0" class="lft">    Solapamiento (%)</td><td cid="1" class="rt">71,52</td><td cid="2" class="rt">0,000</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 2 términos</td><td cid="1" class="rt">0,78</td><td cid="2" class="rt">0,509</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)*Densidad_Energia (J/cm²)</td><td cid="1" class="rt">0,22</td><td cid="2" class="rt">0,643</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)*Solapamiento (%)</td><td cid="1" class="rt">0,30</td><td cid="2" class="rt">0,583</td></tr><tr class="tdata"><td cid="0" class="lft">    Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">1,97</td><td cid="2" class="rt">0,164</td></tr><tr class="tdata"><td cid="0" class="lft">  Interacciones de 3 términos</td><td cid="1" class="rt">1,03</td><td cid="2" class="rt">0,314</td></tr><tr class="tdata"><td cid="0" class="lft">    Ancho_Pulso (ns)*Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">1,03</td><td cid="2" class="rt">0,314</td></tr><tr class="tdata"><td cid="0" class="lft">Error</td><td cid="1" class="emptyline">  </td><td cid="2" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="lft">Total</td><td cid="1" class="emptyline">  </td><td cid="2" class="emptyline">  </td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="0222b71b-dcb3-4674-9c0d-8c3ab4d7f43f">Resumen del modelo</div><table class="stattable" id="0222b71b-dcb3-4674-9c0d-8c3ab4d7f43f"><colgroup cid="0" id="7bdc7e86-6b43-4dd0-b2a2-b980fc5b0ad8"></colgroup><colgroup cid="1" id="78494156-70a4-430b-a093-acdbc0c24307"></colgroup><colgroup cid="2" id="119b2de7-79ed-428b-9f8f-c7aff6213063"></colgroup><colgroup cid="3" id="d909c168-88aa-4130-aa19-4804786cbeb6"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="rt hr">S</td><td cid="1" class="rt hr">R-cuad.</td><td cid="2" class="rt hr">R-cuad.<br/>(ajustado)</td><td cid="3" class="rt hr">R-cuad.<br/>(pred)</td></tr><tr class="tdata"><td cid="0" class="rt">5,92337</td><td cid="1" class="rt">51,21%</td><td cid="2" class="rt">46,53%</td><td cid="3" class="rt">40,08%</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="b05160ce-c339-4941-ac76-ffb2b1fdd93d">Coeficientes codificados</div><table class="stattable" id="b05160ce-c339-4941-ac76-ffb2b1fdd93d"><colgroup cid="0" id="036fd369-65c5-4c04-9ecf-95adf290225d"></colgroup><colgroup cid="1" id="4381c1cc-1b45-47ec-ad56-be263fcac49f"></colgroup><colgroup cid="2" id="3132ba63-9cf3-4e9e-9c4f-3a3165709e4c"></colgroup><colgroup cid="3" id="4c2efdd8-01e2-4dc3-9358-a89fd3cff1f2"></colgroup><colgroup cid="4" id="37ac8c34-5965-495d-97b7-5038de6dfa0e"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Término</td><td cid="1" class="rt hr">Efecto</td><td cid="2" class="rt hr">Coef</td><td cid="3" class="rt hr">EE del<br/>coef.</td><td cid="4" class="rt hr">Valor T</td></tr><tr class="tdata"><td cid="0" class="lft">Constante</td><td cid="1" class="emptyline">  </td><td cid="2" class="rt">8,167</td><td cid="3" class="rt">0,870</td><td cid="4" class="rt">9,39</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)</td><td cid="1" class="rt">3,30</td><td cid="2" class="rt">1,65</td><td cid="3" class="rt">1,07</td><td cid="4" class="rt">1,55</td></tr><tr class="tdata"><td cid="0" class="lft">Densidad_Energia (J/cm²)</td><td cid="1" class="rt">8,59</td><td cid="2" class="rt">4,29</td><td cid="3" class="rt">1,35</td><td cid="4" class="rt">3,17</td></tr><tr class="tdata"><td cid="0" class="lft">Solapamiento (%)</td><td cid="1" class="rt">21,34</td><td cid="2" class="rt">10,67</td><td cid="3" class="rt">1,26</td><td cid="4" class="rt">8,46</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)*Densidad_Energia (J/cm²)</td><td cid="1" class="rt">1,54</td><td cid="2" class="rt">0,77</td><td cid="3" class="rt">1,66</td><td cid="4" class="rt">0,47</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)*Solapamiento (%)</td><td cid="1" class="rt">1,70</td><td cid="2" class="rt">0,85</td><td cid="3" class="rt">1,55</td><td cid="4" class="rt">0,55</td></tr><tr class="tdata"><td cid="0" class="lft">Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">5,29</td><td cid="2" class="rt">2,64</td><td cid="3" class="rt">1,88</td><td cid="4" class="rt">1,41</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)*Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">4,67</td><td cid="2" class="rt">2,33</td><td cid="3" class="rt">2,30</td><td cid="4" class="rt">1,01</td></tr></tbody></table><table class="stattable" id="b05160ce-c339-4941-ac76-ffb2b1fdd93d"><colgroup cid="0" id="036fd369-65c5-4c04-9ecf-95adf290225d"></colgroup><colgroup cid="1" id="e0dc7efc-e390-4812-b01b-ad70b440a434"></colgroup><colgroup cid="2" id="974aff59-0241-4407-a3fa-7d0c639ba0b2"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Término</td><td cid="1" class="rt hr">Valor p</td><td cid="2" class="rt hr">FIV</td></tr><tr class="tdata"><td cid="0" class="lft">Constante</td><td cid="1" class="rt">0,000</td><td cid="2" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)</td><td cid="1" class="rt">0,126</td><td cid="2" class="rt">1,75</td></tr><tr class="tdata"><td cid="0" class="lft">Densidad_Energia (J/cm²)</td><td cid="1" class="rt">0,002</td><td cid="2" class="rt">1,51</td></tr><tr class="tdata"><td cid="0" class="lft">Solapamiento (%)</td><td cid="1" class="rt">0,000</td><td cid="2" class="rt">1,30</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)*Densidad_Energia (J/cm²)</td><td cid="1" class="rt">0,643</td><td cid="2" class="rt">1,93</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)*Solapamiento (%)</td><td cid="1" class="rt">0,583</td><td cid="2" class="rt">1,77</td></tr><tr class="tdata"><td cid="0" class="lft">Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">0,164</td><td cid="2" class="rt">1,22</td></tr><tr class="tdata"><td cid="0" class="lft">Ancho_Pulso (ns)*Densidad_Energia (J/cm²)*Solapamiento (%)</td><td cid="1" class="rt">0,314</td><td cid="2" class="rt">1,88</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="2c063976-2669-48f4-8cb5-60ddfa5afba4">Ecuación de regresión en unidades no codificadas</div><table class="stattable" id="2c063976-2669-48f4-8cb5-60ddfa5afba4"><colgroup cid="0" id="592d3c54-acd8-430c-907d-97e27543f9b7"></colgroup><colgroup cid="1" id="cae40a3a-b1e7-4158-af86-51a4a22cb638"></colgroup><colgroup cid="2" id="f0ed4383-2fe0-4d82-b711-d9634501dae8"></colgroup><tbody><tr class="tdata"><td cid="0" class="lft">Rc</td><td cid="1" class="lft">=</td><td cid="2" class="lft">-133 + 0,445 Ancho_Pulso (ns) + 143 Densidad_Energia (J/cm²) + 1,49 Solapamiento (%)<br/>- 1,41 Ancho_Pulso (ns)*Densidad_Energia (J/cm²)<br/>- 0,00485 Ancho_Pulso (ns)*Solapamiento (%)<br/>- 1,53 Densidad_Energia (J/cm²)*Solapamiento (%)<br/>+ 0,0164 Ancho_Pulso (ns)*Densidad_Energia (J/cm²)*Solapamiento (%)</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="c96bb03b-163c-47e9-bcc1-34417c9b0d04">Estructura de alias</div><table class="stattable" id="c96bb03b-163c-47e9-bcc1-34417c9b0d04"><colgroup cid="0" id="24686fa4-31d3-47ca-9697-805a56e31b8f"></colgroup><colgroup cid="1" id="3a3b7897-2398-4b61-8916-a2c04366fbcc"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Factor</td><td cid="1" class="lft hr">Nombre</td></tr><tr class="tdata"><td cid="0" class="lft">A</td><td cid="1" class="lft">Ancho_Pulso (ns)</td></tr><tr class="tdata"><td cid="0" class="lft">B</td><td cid="1" class="lft">Densidad_Energia (J/cm²)</td></tr><tr class="tdata"><td cid="0" class="lft">C</td><td cid="1" class="lft">Solapamiento (%)</td></tr></tbody></table><table class="stattable" id="55a3a95d-d6b1-4aa6-8aba-4b9681e5cd58"><colgroup cid="0" id="5ab87d82-3873-44bd-bed4-06c1a82d24a9"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="lft hr">Alias</td></tr><tr class="tdata"><td cid="0" class="lft">I</td></tr><tr class="tdata"><td cid="0" class="lft">A</td></tr><tr class="tdata"><td cid="0" class="lft">B</td></tr><tr class="tdata"><td cid="0" class="lft">C</td></tr><tr class="tdata"><td cid="0" class="lft">AB</td></tr><tr class="tdata"><td cid="0" class="lft">AC</td></tr><tr class="tdata"><td cid="0" class="lft">BC</td></tr><tr class="tdata"><td cid="0" class="lft">ABC</td></tr></tbody></table></div><div class="tableselectioncontainer"><div class="tabletitle" id="0ccd2d5b-271f-4f61-a58a-c0f67b8dd0ad">Ajustes y diagnósticos para observaciones poco comunes</div><table class="stattable" id="0ccd2d5b-271f-4f61-a58a-c0f67b8dd0ad"><colgroup cid="0" id="7022bfb5-f556-4fab-8dce-b017bcbadfdc"></colgroup><colgroup cid="1" id="24d7fbf5-804b-4d5f-9535-9e5f3ec83e7a"></colgroup><colgroup cid="2" id="c830c192-477d-45cc-b900-b7ea00a44705"></colgroup><colgroup cid="3" id="2410f7e2-5768-4654-b72b-5b9eacf99330"></colgroup><colgroup cid="4" id="5d38469f-083a-41ca-9bd6-2fa8a6bde4f6"></colgroup><colgroup cid="5" id="2a7c716a-585a-423f-b3d8-313ffe8a0e00"></colgroup><colgroup cid="6" id="ffa7b458-4a07-481e-83d1-c679ea7a4c88"></colgroup><tbody><tr class="tlabel hr"><td cid="0" class="rt hr">Obs</td><td cid="1" class="rt hr">Rc</td><td cid="2" class="rt hr">Ajuste</td><td cid="3" class="rt hr">Resid</td><td cid="4" class="rt hr">Resid<br/>est.</td><td cid="5" class="lft hr"></td><td cid="6" class="lft hr"></td></tr><tr class="tdata"><td cid="0" class="rt">3</td><td cid="1" class="rt">1,65</td><td cid="2" class="rt">-4,37</td><td cid="3" class="rt">6,02</td><td cid="4" class="rt">1,25</td><td cid="5" class="emptyline">  </td><td cid="6" class="lft">X</td></tr><tr class="tdata"><td cid="0" class="rt">9</td><td cid="1" class="rt">1,38</td><td cid="2" class="rt">-1,74</td><td cid="3" class="rt">3,12</td><td cid="4" class="rt">0,65</td><td cid="5" class="emptyline">  </td><td cid="6" class="lft">X</td></tr><tr class="tdata"><td cid="0" class="rt">37</td><td cid="1" class="rt">25,33</td><td cid="2" class="rt">13,73</td><td cid="3" class="rt">11,60</td><td cid="4" class="rt">2,02</td><td cid="5" class="lft">R</td><td cid="6" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="rt">47</td><td cid="1" class="rt">22,85</td><td cid="2" class="rt">10,62</td><td cid="3" class="rt">12,23</td><td cid="4" class="rt">2,13</td><td cid="5" class="lft">R</td><td cid="6" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="rt">53</td><td cid="1" class="rt">22,90</td><td cid="2" class="rt">11,34</td><td cid="3" class="rt">11,56</td><td cid="4" class="rt">2,01</td><td cid="5" class="lft">R</td><td cid="6" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="rt">55</td><td cid="1" class="rt">20,05</td><td cid="2" class="rt">17,28</td><td cid="3" class="rt">2,78</td><td cid="4" class="rt">0,61</td><td cid="5" class="emptyline">  </td><td cid="6" class="lft">X</td></tr><tr class="tdata"><td cid="0" class="rt">57</td><td cid="1" class="rt">1,29</td><td cid="2" class="rt">-0,09</td><td cid="3" class="rt">1,37</td><td cid="4" class="rt">0,34</td><td cid="5" class="emptyline">  </td><td cid="6" class="lft">X</td></tr><tr class="tdata"><td cid="0" class="rt">58</td><td cid="1" class="rt">41,11</td><td cid="2" class="rt">21,97</td><td cid="3" class="rt">19,14</td><td cid="4" class="rt">3,52</td><td cid="5" class="lft">R</td><td cid="6" class="emptyline">  </td></tr><tr class="tdata"><td cid="0" class="rt">61</td><td cid="1" class="rt">26,40</td><td cid="2" class="rt">26,67</td><td cid="3" class="rt">-0,27</td><td cid="4" class="rt">-0,06</td><td cid="5" class="emptyline">  </td><td cid="6" class="lft">X</td></tr><tr class="tdata"><td cid="0" class="rt">63</td><td cid="1" class="rt">1,55</td><td cid="2" class="rt">-1,62</td><td cid="3" class="rt">3,17</td><td cid="4" class="rt">0,78</td><td cid="5" class="emptyline">  </td><td cid="6" class="lft">X</td></tr><tr class="tdata"><td cid="0" class="rt">80</td><td cid="1" class="rt">26,59</td><td cid="2" class="rt">13,26</td><td cid="3" class="rt">13,33</td><td cid="4" class="rt">2,30</td><td cid="5" class="lft">R</td><td cid="6" class="emptyline">  </td></tr></tbody></table><div class="footnote" id="d6ef6488-da57-4c9b-b793-e28eb4dc815f">Residuo grande R<br/>X  poco común X</div></div></div></div></body></html>
